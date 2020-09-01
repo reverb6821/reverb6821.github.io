@@ -1,0 +1,108 @@
+/*Main*/
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  margin: 0;
+  background-color: #2D2E2E;
+}
+
+/*Button*/
+button {
+  color: var(--color);
+  transition: 0.25s;
+}
+button:hover, button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+code {
+  color: #e4cb58;
+  font: inherit;
+}
+
+.pulse:hover,
+.pulse:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(239, 110, 174, 0);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+.pulse {
+  --color: #ef6eae;
+  --hover: #ef8f6e;
+}
+
+/*Header*/
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 600px;
+  transition: all ease-in-out 0.5s;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 0 15px;
+  background: #2B2C2C;
+  overflow-y: auto;
+}
+#header .profile img {
+  margin-top: 200px;
+  margin-left: 200px;
+  margin-right: 200px;
+  display: block;
+  width: 300px;
+  border: 10px solid #2B2C2C;
+}
+#header .profile .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #fff;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+}
+#header .profile .social-links a:hover {
+  background: #149ddd;
+  color: #fff;
+  text-decoration: none;
+}
+
+#main {
+  margin-left: 300px;
+}
+
+@media (max-width: 1199px) {
+  #header {
+    left: -300px;
+  }
+
+  #main {
+    margin-left: 0;
+  }
+}
+/*end Header*/
