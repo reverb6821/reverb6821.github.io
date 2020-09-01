@@ -65,9 +65,9 @@ code {
   overflow-y: auto;
 }
 #header .profile img {
-  margin-top: 200px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-top: 180px auto;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
   width: 300px;
   border: 10px solid #2B2C2C;
@@ -91,6 +91,19 @@ code {
   color: #fff;
   text-decoration: none;
 }
+#header .profile my-name-wrapper {
+  font-weight: 600;
+  text-align: center;
+  font-size: 28px;
+  margin: 0 auto;
+  display: block;
+}
+#header .profile .my-name {
+  font-size: 55px;
+  display: block;
+  margin: 30px 0;
+  color: #555;
+}
 
 #main {
   margin-left: 300px;
@@ -105,4 +118,60 @@ code {
     margin-left: 0;
   }
 }
-/*end Header*/
+/*Animation title*/
+.text {
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  font-weight: 600;
+  font-size: 28px;
+  width: 450px;
+  margin-left: -80px;
+  height: 40px;
+}
+
+p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+
+.word {
+  position: absolute;
+  width: 300px;
+  opacity: 0;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wisteria {
+  color: #8e44ad;
+}
+
+.belize {
+  color: #2980b9;
+}
+
+.pomegranate {
+  color: #c0392b;
+}
