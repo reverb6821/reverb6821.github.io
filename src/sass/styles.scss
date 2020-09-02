@@ -7,53 +7,18 @@ body {
 }
 
 /*Button*/
-button {  
+a {  
     color: var(--color);
     transition: 0.25s;
     
     &:hover,
     &:focus { 
       border-color: var(--hover);
-      color: #fff;
+      color: #ffb400;
     }
   }
 
-button {
-    background: none;
-    border: 2px solid;
-    font: inherit;
-    line-height: 1;
-    margin: 0.5em;
-    padding: 1em 2em;
-  }
-  
-  h1 { font-weight: 400; }
-  
-  code { 
-    color: #e4cb58;
-    font: inherit;
-  }
 
-  .pulse:hover, 
-.pulse:focus {
-  animation: pulse 1s;
-  box-shadow: 0 0 0 2em rgba(#ef6eae,0);
-}
-
-@keyframes pulse {
-  0% { box-shadow: 0 0 0 0 var(--hover); }
-}
-
-$colors: (
-  pulse: #ef6eae, 
-);
-
-@each $button, $color in $colors {
-    .#{$button} {
-      --color: #{$color};
-      --hover: #{adjust-hue($color, 45deg)};
-    }
-  }
 
 /*Header*/
 #header {
@@ -79,11 +44,12 @@ $colors: (
 		}
 		.social-links {
 			a {
+				background: none;
+				border: 2px solid;
+				font: inherit;
 				font-size: 18px;
 				display: inline-block;
-				background: #fff;
-				color: #fff;
-				line-height: 1;
+			   line-height: 1;
 				padding: 8px 0;
 				margin-right: 4px;
 				border-radius: 50%;
@@ -91,12 +57,35 @@ $colors: (
 				width: 50px;
 				height: 50px;
 				transition: 0.3s;
-				&:hover {
-					background: #149ddd;
-					color: #fff;
-					text-decoration: none;
-				}
+			  }
+			  
+			  h1 { font-weight: 400; }
+			  
+			  code { 
+				color: #ffb400;
+				font: inherit;
+			  }
+			
+			  .pulse:hover, 
+			.pulse:focus {
+			  animation: pulse 1s;
+			  box-shadow: 0 0 0 2em rgba(#ffb400,0);
 			}
+			
+			@keyframes pulse {
+			  0% { box-shadow: 0 0 0 0 var(--hover); }
+			}
+			
+			$colors: (
+			  pulse: #ffb400, 
+			);
+			
+			@each $a, $color in $colors {
+				.#{$a} {
+				  --color: #{$color};
+				  --hover: #{adjust-hue($color, 45deg)};
+				}
+			  }
 		}
 		my-name-wrapper {
 			font-weight: 600;
@@ -167,13 +156,106 @@ p {
 	transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .wisteria {
-	color: #8e44ad;
+	color: #ffb400;
 }
 .belize {
-	color: #2980b9;
+	color: #ffb400;
 }
 .pomegranate {
-	color: #c0392b;
+	color: #ffb400;
 }
 
+/* Mobile Navigation */
+.mobile-nav-toggle {
+	position: fixed;
+	right: 15px;
+	top: 15px;
+	z-index: 9998;
+	border: 0;
+	background: none;
+	font-size: 24px;
+	transition: all 0.4s;
+	outline: none !important;
+	line-height: 1;
+	cursor: pointer;
+	text-align: right;
+	i {
+		color: #149ddd;
+	}
+}
+.mobile-nav-active {
+	overflow: hidden;
+	#header {
+		left: 0;
+	}
+	.mobile-nav-toggle {
+		i {
+			color: #fff;
+		}
+	}
+}
+
+/*Main */
+
+#home {
+	width: 100%;
+	height: 100vh;
+	background-color: #2D2E2E;
+	background-size: cover;
+	&:before {
+		content: "";
+		background: #2D2E2E;
+		position: absolute;
+		bottom: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 1;
+	}
+	.home-container {
+		position: relative;
+		z-index: 2;
+		min-width: 300px;
+	}
+	h1 {
+		margin: 0 0 10px 0;
+		font-size: 64px;
+		font-weight: 700;
+		line-height: 56px;
+		color: #fff;
+	}
+	p {
+		color: #fff;
+		margin-bottom: 50px;
+		font-size: 15px;
+		font-family: "Poppins", sans-serif;
+		span {
+			color: #fff;
+			padding-bottom: 4px;
+			letter-spacing: 1px;
+			border-bottom: 3px solid #149ddd;
+		}
+	}
+}
+@media (min-width: 1024px) {
+	#home {
+		background-attachment: fixed;
+	}
+}
+@media (max-width: 768px) {
+	#home {
+		h1 {
+			font-size: 28px;
+			line-height: 36px;
+		}
+		h2 {
+			font-size: 18px;
+			line-height: 24px;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+
+/*end Main*/
 

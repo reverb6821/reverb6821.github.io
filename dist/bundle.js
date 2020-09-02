@@ -86,6 +86,17 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./node_modules/remixicon/fonts/remixicon.css":
+/*!****************************************************!*\
+  !*** ./node_modules/remixicon/fonts/remixicon.css ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./node_modules/remixicon/fonts/remixicon.css?");
+
+/***/ }),
+
 /***/ "./src/js/index.js":
 /*!*************************!*\
   !*** ./src/js/index.js ***!
@@ -94,7 +105,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sass_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../sass/styles.scss */ \"./src/sass/styles.scss\");\n/* harmony import */ var _sass_styles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sass_styles_scss__WEBPACK_IMPORTED_MODULE_0__);\n //text animation\n\nvar words = document.getElementsByClassName('word');\nvar wordArray = [];\nvar currentWord = 0;\nwords[currentWord].style.opacity = 1;\n\nfor (var i = 0; i < words.length; i++) {\n  splitLetters(words[i]);\n}\n\nfunction changeWord() {\n  var cw = wordArray[currentWord];\n  var nw = currentWord == words.length - 1 ? wordArray[0] : wordArray[currentWord + 1];\n\n  for (var i = 0; i < cw.length; i++) {\n    animateLetterOut(cw, i);\n  }\n\n  for (var i = 0; i < nw.length; i++) {\n    nw[i].className = 'letter behind';\n    nw[0].parentElement.style.opacity = 1;\n    animateLetterIn(nw, i);\n  }\n\n  currentWord = currentWord == wordArray.length - 1 ? 0 : currentWord + 1;\n}\n\nfunction animateLetterOut(cw, i) {\n  setTimeout(function () {\n    cw[i].className = 'letter out';\n  }, i * 80);\n}\n\nfunction animateLetterIn(nw, i) {\n  setTimeout(function () {\n    nw[i].className = 'letter in';\n  }, 340 + i * 80);\n}\n\nfunction splitLetters(word) {\n  var content = word.innerHTML;\n  word.innerHTML = '';\n  var letters = [];\n\n  for (var i = 0; i < content.length; i++) {\n    var letter = document.createElement('span');\n    letter.className = 'letter';\n    letter.innerHTML = content.charAt(i);\n    word.appendChild(letter);\n    letters.push(letter);\n  }\n\n  wordArray.push(letters);\n}\n\nchangeWord();\nsetInterval(changeWord, 4000);\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sass_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../sass/styles.scss */ \"./src/sass/styles.scss\");\n/* harmony import */ var _sass_styles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sass_styles_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var remixicon_fonts_remixicon_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! remixicon/fonts/remixicon.css */ \"./node_modules/remixicon/fonts/remixicon.css\");\n/* harmony import */ var remixicon_fonts_remixicon_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(remixicon_fonts_remixicon_css__WEBPACK_IMPORTED_MODULE_1__);\n\n //text animation\n\nvar words = document.getElementsByClassName('word');\nvar wordArray = [];\nvar currentWord = 0;\nwords[currentWord].style.opacity = 1;\n\nfor (var i = 0; i < words.length; i++) {\n  splitLetters(words[i]);\n}\n\nfunction changeWord() {\n  var cw = wordArray[currentWord];\n  var nw = currentWord == words.length - 1 ? wordArray[0] : wordArray[currentWord + 1];\n\n  for (var i = 0; i < cw.length; i++) {\n    animateLetterOut(cw, i);\n  }\n\n  for (var i = 0; i < nw.length; i++) {\n    nw[i].className = 'letter behind';\n    nw[0].parentElement.style.opacity = 1;\n    animateLetterIn(nw, i);\n  }\n\n  currentWord = currentWord == wordArray.length - 1 ? 0 : currentWord + 1;\n}\n\nfunction animateLetterOut(cw, i) {\n  setTimeout(function () {\n    cw[i].className = 'letter out';\n  }, i * 80);\n}\n\nfunction animateLetterIn(nw, i) {\n  setTimeout(function () {\n    nw[i].className = 'letter in';\n  }, 340 + i * 80);\n}\n\nfunction splitLetters(word) {\n  var content = word.innerHTML;\n  word.innerHTML = '';\n  var letters = [];\n\n  for (var i = 0; i < content.length; i++) {\n    var letter = document.createElement('span');\n    letter.className = 'letter';\n    letter.innerHTML = content.charAt(i);\n    word.appendChild(letter);\n    letters.push(letter);\n  }\n\n  wordArray.push(letters);\n}\n\nchangeWord();\nsetInterval(changeWord, 4000);\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ }),
 

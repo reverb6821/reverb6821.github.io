@@ -1,5 +1,5 @@
 import '../sass/styles.scss';
-
+import 'remixicon/fonts/remixicon.css'
 //text animation
 var words = document.getElementsByClassName('word');
 var wordArray = [];

@@ -3,20 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ReverbOD Portfolio</title>
     <!-- CSS only -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <link rel="stylesheet" href="./dist/bundle.css">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 </head>
 <body>
+    <!-- mobile button -->
+    <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
     <!-- Header -->
     <header id="header">
         <div class="d-flex flex-column">  
           <div class="profile">
             <img src="./dist/images/63eb1635141d7627768f373d1c06c4f1.jpg" alt="" class="img-fluid rounded-circle">
             <div class="social-links mt-3 text-center">
-                <button class="pulse">Github</button>
-                <button class="pulse">Linkedin</button>
+                <a class="pulse" href=""><i class="ri-github-fill"></i></a>
+                <a class="pulse" href=""><i class="ri-linkedin-box-fill"></i></a>
+                <a class="pulse" href=""><i class="ri-skype-line"></i></a>
+                <a class="pulse" href=""><i class="ri-mail-line"></i></a>
                 <div class = "my-name-wrapper">
                     <div class="social-links mt-3 text-center">
                         <span style="font-weight: 400; color:#fff;">Hi There ! I'm</span>
@@ -29,13 +34,26 @@
                             </p>
                         </div>
                     </div>
-                </div>
-                
+                </div>                
             </div>
           </div>
         </div>
     </header>
     <!-- End Header -->
+
+    <!-- main -->
+    <section id="home" class="d-flex flex-column justify-content-center align-items-center">
+        <div class="home-container">
+          <h1 ><a style="color:#ffb400;">About</a> me</h1>
+          <p>Ever since I was a child I was been passionate about science and technology, a <b style="color:#ffb400;">passion</b> born when the first PC with Windows95 and 56k modem arrived at home.
+            From that moment it has been a continuous devouring everything related to technology, going to deepen the web development after discovering <b style="color:#ffb400;"></b>Javascript</b> with 
+            its runtime <b>Node.JS</b>, of which I am recently starting to approach the more modern library <b style="color:#ffb400;">React.js</b> . Over the years I have dealt personally and hobbyist with 
+            the development of small programs and bots, for the development and management of my personal passions, which has recently led me to decide to field my 
+            knowledge also from a professional point of view , increasing my theoretical training and developing that practice.</p>
+        </div>
+    </section>
+    <!-- end main -->
+
     <!-- JavaScript and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
