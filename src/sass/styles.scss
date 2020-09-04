@@ -1,113 +1,120 @@
-//Color
+@font-face {
+  font-family: Lato;
+  src: url('../fonts/Lato-Black.ttf');
+  src: url('../fonts/Lato-Bold.ttf');
+  src: url('../fonts/Lato-Regular.ttf');
+}
+
+.body{
+  background:#2D2E2E;
+  font-style: Lato-Black;
+}
+
+.content{
+  background:#2D2E2E;
+}
 
 .sidebar{
   background:#2B2C2C;
   color: #fff;
 }
 
-// Button Style
-button {
-    background: none;
-    border: 2px solid;
-    font: inherit;
-    line-height: 1;
-    margin: 0.5em;
-    padding: 1em 2em;
-    width: 16px;
-    height: 36px;
-  }
-  
-  h1 { font-weight: 400; }
-  
-  code { 
-    color: #e4cb58;
-    font: inherit;
-  }
+.footer{
+  background-color: #292A2A;
+}
 
-// Button Propriety
-button {  
-    color: var(--color);
-    transition: 0.25s;
-    
-    &:hover,
-    &:focus { 
-      border-color: var(--hover);
-      color: #fff;
-    }
+// PSociaal Link
+.pure-button {  
+  box-shadow: 
+    0.3em 0.3em 0 0 var(--color),
+    inset 0.3em 0.3em 0 0 var(--color);
+  
+  &:hover,
+  &:focus {
+    box-shadow: 
+      0 0 0 0 var(--hover),
+      inset 6em 3.5em 0 0 var(--hover);
   }
+}
 
-// Button Color
 $colors: (
-  up: #e4cb58
+  pure-button: #19bc8b
 );
 
-  @each $button, $color in $colors {
-    .#{$button} {
-      --color: #{$color};
-      --hover: #{adjust-hue($color, 45deg)};
-    }
+@each $pure-button, $color in $colors {
+  .#{$pure-button} {
+    --color: #{$color};
+    --hover: #{adjust-hue($color, 45deg)};
+  }
+}
+
+.pure-button {  
+  color: var(--color);
+  transition: 0.25s;
+  
+  &:hover,
+  &:focus { 
+    border-color: var(--hover);
+    color: #fff;
+  }
+}
+
+// Rotating Text
+.text {
+  width: 450px;
+  font-weight: 300;
+}
+
+p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+
+.word {
+  position: absolute;
+  width: 220px;
+  opacity: 0;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+
+  &.out {
+    transform: rotateX(90deg);
+    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
   }
 
-// Animation
-.up:hover,
-.up:focus {
-  box-shadow: inset 0 -3.25em 0 0 var(--hover);
+  &.behind {
+    transform: rotateX(-90deg);
+  }
+
+  &.in {
+    transform: rotateX(0deg);
+    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
 }
 
-// END BUTTON STYLE
-
-// Text Animation
-.text {
-	position: absolute;
-	width: 450px;
-	left: 50%;
-	margin-left: -225px;
-	height: 40px;
-	top: 50%;
-	margin-top: -20px;
-}
-p {
-	display: inline-block;
-	vertical-align: top;
-	margin: 0;
-}
-.word {
-	position: absolute;
-	width: 220px;
-	opacity: 0;
-}
-.letter {
-	display: inline-block;
-	position: relative;
-	float: left;
-	transform: translateZ(25px);
-	transform-origin: 50% 50% 25px;
-}
-.letter.out {
-	transform: rotateX(90deg);
-	transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-.letter.behind {
-	transform: rotateX(-90deg);
-}
-.letter.in {
-	transform: rotateX(0deg);
-	transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
 .wisteria {
-	color: #8e44ad;
-}
-.belize {
-	color: #2980b9;
-}
-.pomegranate {
-	color: #c0392b;
-}
-.green {
-	color: #16a085;
-}
-.midnight {
-	color: #2c3e50;
+  color: #8e44ad;
 }
 
-// END Text Animation
+.belize {
+  color: #2980b9;
+}
+
+.pomegranate {
+  color: #c0392b;
+}
+
+.green {
+  color: #16a085;
+}
+
+.midnight {
+  color: #2c3e50;
+}
