@@ -4,167 +4,190 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- PureCSS-->
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
-    <link rel="stylesheet" href="src/css/main.css">
-    <link rel="stylesheet" href="dist/bundle.css">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/main.css">
 </head>
 <body>
-    <div id="layout" class="pure-g">
-        <!-- Header-->
-        <div class="sidebar pure-u-1 pure-u-md-1-4">
-            <div class="header">
-                <h2 class="brand-tagline">Hi There! I'm</h2>
-                <h1 class="brand-title">Giuseppe Gigliotti</h1>
-                <div class="text">
-                    <p>Nachos are</p>
-                    <p>
-                      <span class="word wisteria">tasty.</span>
-                      <span class="word belize">wonderful.</span>
-                      <span class="word pomegranate">fancy.</span>
-                      <span class="word green">beautiful.</span>
-                      <span class="word midnight">cheap.</span>
-                    </p>
-                </div>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <button type="button" class="mobile-nav-toggle d-xl-none"><i class="ri-menu-5-line"></i></button>
 
-                <!-- Social Button-->
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li class="nav-item">
-                            <a class="pure-button" href="#">Github</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="pure-button" href="#">Linkedin</a>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- END Social Button-->
+    <!-- Header -->
+    <header id="header" class="d-flex flex-column justify-content-center">
+        <!-- Nav Element-->
+        <nav class="nav-menu">
+            <ul>
+                <li class="item"><a class="link" href="#intro"><i class="ri-home-7-line"></i> <span>Home</span></a></li>
+                <li class="item"><a class="link" href="#about"><i class="ri-user-3-line"></i> <span>About</span></a></li>
+                <li class="item"><a class="link" href="#resume"><i class="ri-file-line"></i> <span>Resume</span></a></li>
+                <li class="item"><a class="link" href="#portfolio"><i class="ri-window-2-line"></i><span>Portfolio</span></a></li>
+                <li class="item"><a class="link" href="#services"><i class="ri-server-line"></i> <span>Services</span></a></li>
+            </ul>
+        </nav>
+        <!-- END nav Element -->
+    </header>
+    <!-- End Header -->
+    
+    <!-- intro Section -->
+    <section id="intro" class="d-flex flex-column justify-content-center">
+        <div class="container" data-aos="zoom-in" data-aos-delay="100">
+            <h1>Giuseppe Gigliotti</h1>
+            <!-- text rotate -->
+            <p>I'm
+                <span
+                class="txt-rotate"
+                data-period="2000"
+                data-rotate='[ "Full Stack Developer", "JavaScript Enthusiast", "Tech Lover", "Creative Mind" ]'></span>
+            </p>
+            <!-- END text rotate -->
+
+            <!-- Social Link -->
+            <div class="social-links">
+                <a href="https://github.com/ReverbOD"><i class="ri-github-line"></i></a>
+                <a href="https://codepen.io/reverbod"><i class="ri-codepen-line"></i></a>
+                <a href="https://www.linkedin.com/in/gigliottigiuseppe"><i class="ri-linkedin-fill"></i></a>
             </div>
+            <!-- END Social Link -->
         </div>
-        <!-- end Header-->
-        
-        <!-- content -->
-        <div class="content pure-u-1 pure-u-md-3-4">
-            <div>
-                <!-- A wrapper for all the blog posts -->
-                <div class="posts">
-                    <h1 class="content-subhead">Pinned Post</h1>
-    
-                    <!-- A single blog post -->
-                    <section class="post">
-                        <header class="post-header">
-                            <img width="48" height="48" alt="Tilo Mitra&#x27;s avatar" class="post-avatar" src="/img/common/tilo-avatar.png">
-    
-                            <h2 class="post-title">Introducing Pure</h2>
-    
-                            <p class="post-meta">
-                                By <a href="#" class="post-author">Tilo Mitra</a> under <a class="post-category post-category-design" href="#">CSS</a> <a class="post-category post-category-pure" href="#">Pure</a>
-                            </p>
-                        </header>
-    
-                        <div class="post-description">
-                            <p>
-                                Yesterday at CSSConf, we launched Pure – a new CSS library. Phew! Here are the <a href="https://speakerdeck.com/tilomitra/pure-bliss">slides from the presentation</a>. Although it looks pretty minimalist, we’ve been working on Pure for several months. After many iterations, we have released Pure as a set of small, responsive, CSS modules that you can use in every web project.
-                            </p>
-                        </div>
-                    </section>
+    </section>
+    <!-- End intro -->
+
+    <main id="main" style="background:#2B2C2C;">
+        <!-- About Section -->
+        <section id="about">
+            <div class="container" data-aos="fade-up">
+  
+                <div class="section-title">
+                    <h2>About</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
                 </div>
-    
-                <div class="posts">
-                    <h1 class="content-subhead">Recent Posts</h1>
-    
-                    <section class="post">
-                        <header class="post-header">
-                            <img width="48" height="48" alt="Eric Ferraiuolo&#x27;s avatar" class="post-avatar" src="/img/common/ericf-avatar.png">
-    
-                            <h2 class="post-title">Everything You Need to Know About Grunt</h2>
-    
-                            <p class="post-meta">
-                                By <a class="post-author" href="#">Eric Ferraiuolo</a> under <a class="post-category post-category-js" href="#">JavaScript</a>
-                            </p>
-                        </header>
-    
-                        <div class="post-description">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            </p>
-                        </div>
-                    </section>
-    
-                    <section class="post">
-                        <header class="post-header">
-                            <img width="48" height="48" alt="Reid Burke&#x27;s avatar" class="post-avatar" src="/img/common/reid-avatar.png">
-    
-                            <h2 class="post-title">Photos from CSSConf and JSConf</h2>
-    
-                            <p class="post-meta">
-                                By <a class="post-author" href="#">Reid Burke</a> under <a class="post-category" href="#">Uncategorized</a>
-                            </p>
-                        </header>
-    
-                        <div class="post-description">
-                            <div class="post-images pure-g">
-                                <div class="pure-u-1 pure-u-md-1-2">
-                                    <a href="http://www.flickr.com/photos/uberlife/8915936174/">
-                                        <img alt="Photo of someone working poolside at a resort"
-                                             class="pure-img-responsive"
-                                             src="http://farm8.staticflickr.com/7448/8915936174_8d54ec76c6.jpg">
-                                    </a>
-    
-                                    <div class="post-image-meta">
-                                        <h3>CSSConf Photos</h3>
-                                    </div>
-                                </div>
-    
-                                <div class="pure-u-1 pure-u-md-1-2">
-                                    <a href="http://www.flickr.com/photos/uberlife/8907351301/">
-                                        <img alt="Photo of the sunset on the beach"
-                                             class="pure-img-responsive"
-                                             src="http://farm8.staticflickr.com/7382/8907351301_bd7460cffb.jpg">
-                                    </a>
-    
-                                    <div class="post-image-meta">
-                                        <h3>JSConf Photos</h3>
-                                    </div>
-                                </div>
+  
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img src="./src/img/avatar.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-8 pt-4 pt-lg-0 content">
+                        <h3>Full Stack Web Developer.</h3>
+                        <p class="font-italic">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua.
+                        </p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <ul>
+                                    <li><i class="ri-arrow-right-s-line"></i> <strong>Birthday:</strong> 30 Sept 1990</li>
+                                    <li><i class="ri-arrow-right-s-line"></i> <strong>Website:</strong> www.example.com</li>
+                                    <li><i class="ri-arrow-right-s-line"></i> <strong>City:</strong> Benevento</li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <ul>
+                                    <li><i class="ri-arrow-right-s-line"></i> <strong>Age:</strong> 30</li>
+                                    <li><i class="ri-arrow-right-s-line"></i> <strong>Languages:</strong> Italian, English, Spanish</li>
+                                    <li><i class="ri-arrow-right-s-line"></i> <strong>Email</strong> mail me</li>
+                                </ul>
                             </div>
                         </div>
-                    </section>
-    
-                    <section class="post">
-                        <header class="post-header">
-                            <img width="48" height="48" alt="Andrew Wooldridge&#x27;s avatar" class="post-avatar" src="/img/common/andrew-avatar.png">
-    
-                            <h2 class="post-title">YUI 3.10.2 Released</h2>
-    
-                            <p class="post-meta">
-                                By <a class="post-author" href="#">Andrew Wooldridge</a> under <a class="post-category post-category-yui" href="#">YUI</a>
-                            </p>
-                        </header>
-    
-                        <div class="post-description">
-                            <p>
-                                We are happy to announce the release of YUI 3.10.2! You can find it now on the Yahoo! CDN, download it directly, or pull it in via npm. We’ve also updated the YUI Library website with the latest documentation.
-                            </p>
-                        </div>
-                    </section>
-                </div>
-    
-                <div class="footer">
-                    <div class="pure-menu pure-menu-horizontal">
-                        <ul>
-                            <li class="pure-menu-item"><a href="http://purecss.io/" class="pure-menu-link">About</a></li>
-                            <li class="pure-menu-item"><a href="http://twitter.com/yuilibrary/" class="pure-menu-link">Twitter</a></li>
-                            <li class="pure-menu-item"><a href="http://github.com/pure-css/pure/" class="pure-menu-link">GitHub</a></li>
-                        </ul>
+
+                        <p>
+                        Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
+                        Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- end Content-->
+        </section>
+        <!-- End About Section -->
+
+        <!-- ======= Skills Section ======= -->
+        <section id="skills" class="skills section-bg">
+            <div class="container" data-aos="fade-up">
+  
+                <div class="section-title">
+                    <h2>Skills</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+  
+                <div class="row skills-content">
+  
+                    <div class="col-lg-6">
+  
+                        <div class="progress">
+                            <span class="skill">HTML/CSS <i class="val">100%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+  
+                        <div class="progress">
+                            <span class="skill">Sass <i class="val">75%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill">JavaScript <i class="val">80%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill">ReactJS <i class="val">80%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+  
+                    </div>
+  
+                    <div class="col-lg-6">
+
+                        <div class="progress">
+                            <span class="skill">VueJS <i class="val">80%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+  
+                        <div class="progress">
+                            <span class="skill">NodeJS <i class="val">80%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+  
+                        <div class="progress">
+                            <span class="skill">MongoDB <i class="val">90%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+  
+                        <div class="progress">
+                            <span class="skill">MySQL <i class="val">55%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+  
+                    </div>
+  
+                </div>
+            </div>
+      </section>
+      <!-- End Skills Section -->
+    </main>
+    <!-- end Main-->
     
-    <script src="dist/bundle.js"></script>
+    
+    <!-- JavaScript and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="./src/js/index.js"></script>
+    <script src="./src/js/text.js"></script>
 </body>
 </html>
