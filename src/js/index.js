@@ -1,64 +1,58 @@
-// Navbar element
-
-const sections = [...document.querySelectorAll('section')];
-const link = (id) => document.querySelector(`a[href="#${id}"]`)
-
-const inView = (element) => {
-    var top = element.offsetTop;
-    var height = element.offsetHeight;
-
-    while(element.offsetParent){
-        element = element.offsetParent;
-        top += element.offsetTop;
+// text rotation
+var TxtRotate = function(el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = '';
+    this.tick();
+    this.isDeleting = false;
+  };
+  
+  TxtRotate.prototype.tick = function() {
+    var i = this.loopNum % this.toRotate.length;
+    var fullTxt = this.toRotate[i];
+  
+    if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
-
-    return (
-        top < (window.pageYOffset + window.innerHeight) && (top + height) > window.pageYOffset
-        );
-    };
-
-const init = () => {
-    function update(){
-        let next = false;
-
-        sections.forEach(section => {
-            const current = link(section.id);
-
-            if(inView(section) && !next ){
-                current.classList.add('current');
-                next = true;
-            } else {
-                current.classList.remove('current');
-            }
-        } );
+  
+    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+  
+    var that = this;
+    var delta = 300 - Math.random() * 100;
+  
+    if (this.isDeleting) { delta /= 2; }
+  
+    if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period;
+      this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === '') {
+      this.isDeleting = false;
+      this.loopNum++;
+      delta = 500;
     }
-    update();
-    window.addEventListener('scroll', update);
-}
-
-init();
-
-
-// scroll to top button
-const scrollToTop = document.getElementById('scroll-to-top');
-let dataShow = false;
-
-window.addEventListener('scroll', ()=> {
-    if(window.scrollY > 50 && !dataShow){
-        scrollToTop.setAttribute('data-show', 'true');
-        dataShow = true;
+  
+    setTimeout(function() {
+      that.tick();
+    }, delta);
+  };
+  
+  window.onload = function() {
+    var elements = document.getElementsByClassName('txt-rotate');
+    for (var i=0; i<elements.length; i++) {
+      var toRotate = elements[i].getAttribute('data-rotate');
+      var period = elements[i].getAttribute('data-period');
+      if (toRotate) {
+        new TxtRotate(elements[i], JSON.parse(toRotate), period);
+      }
     }
-
-    if(window.scrollY <= 50 && dataShow){
-        scrollToTop.setAttribute('data-show', 'false');
-        dataShow = false;
-    }
-});
-
-scrollToTop.addEventListener('click', ()=>{
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
-
+    // INJECT CSS
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+    document.body.appendChild(css);
+  };
+// END Animated txt
