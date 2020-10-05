@@ -300,7 +300,7 @@
                     </div>
                     <div class="row">
                         <!-- Portfolio Item -->
-                        <div class="portfolio-item padd-15" data category="template">
+                        <div class="portfolio-item padd-15" data-category="template">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
                                     <img src="src/img/portfolio/vanilla.png" alt="portfolio">
@@ -315,7 +315,7 @@
                         </div>
                         <!-- END Portfolio Item -->
                         <!-- Portfolio Item -->
-                        <div class="portfolio-item padd-15" data category="template">
+                        <div class="portfolio-item padd-15" data-category="template">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
                                     <img src="src/img/portfolio/ice.jpg" alt="portfolio">
@@ -330,7 +330,7 @@
                         </div>
                         <!-- END Portfolio Item -->
                         <!-- Portfolio Item -->
-                        <div class="portfolio-item padd-15" data category="template">
+                        <div class="portfolio-item padd-15" data-category="template">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
                                     <img src="src/img/portfolio/strigo.jpg" alt="portfolio">
@@ -345,7 +345,7 @@
                         </div>
                         <!-- END Portfolio Item -->
                         <!-- Portfolio Item -->
-                        <div class="portfolio-item padd-15" data category="app">
+                        <div class="portfolio-item padd-15" data-category="app">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
                                     <img src="src/img/portfolio/aquariumnext.jpg" alt="portfolio">
@@ -360,7 +360,7 @@
                         </div>
                         <!-- END Portfolio Item -->   
                         <!-- Portfolio Item -->
-                        <div class="portfolio-item padd-15" data category="website">
+                        <div class="portfolio-item padd-15" data-category="website">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
                                     <img src="src/img/portfolio/maurodr.jpg" alt="portfolio">
@@ -375,7 +375,7 @@
                         </div>
                         <!-- END Portfolio Item --> 
                         <!-- Portfolio Item -->
-                        <div class="portfolio-item padd-15" data category="template">
+                        <div class="portfolio-item padd-15" data-category="template">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
                                     <img src="src/img/portfolio/xeno.jpg" alt="portfolio">
@@ -401,9 +401,17 @@
     <!-- Lightbox-->
     <div class="lightbox">
         <div class="lightbox-content">
-
+            <div class="lightbox-close"><i class="ri-close-fill" id="portfolio-close"></i></div>
+            <img src="src/img/portfolio/vanilla.png" class="lightbox-img" alt="">
+            <div class="lightbox-caption">
+                <div class="caption-text">Made with only css & js. <a href="">Preview</a> <a href="">Download</a></div>
+                <div class="caption-counter">1 of 6</div>
+            </div>
         </div>
-        <div class="lightbox-controls"></div>
+        <div class="lightbox-controls">
+            <div class="next-item"><i class="ri-arrow-left-s-line" id="portfolio-next"></i></div>
+            <div class="prev-item"><i class="ri-arrow-right-s-line" id="portfolio-prev"></i></div>
+        </div>
     </div>
 
     <!-- JS -->

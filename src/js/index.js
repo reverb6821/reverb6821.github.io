@@ -1,3 +1,35 @@
+//Portfolio Filter
+
+const filterContainer = document.querySelector('.portfolio-filter');
+const filterBtns = filterContainer.children;
+const totaFilterBtn = filterBtns.length;
+const portfolioItems = document.querySelector('.portfolio-item');
+const totalPortfolioItem = portfolioItems.length;
+
+for(let i = 0; i < totaFilterBtn; i++){
+  //console.log(this.innerHTML)
+  filterBtns[i].addEventListener('click', function(){
+    filterContainer.querySelector('.active').classList.remove('active');
+    this.classList.add('active');
+    
+    const filterValue = this.getAttribute('data-filter');
+    for(let k = 0; k < totalPortfolioItem; k++){
+      if(filterValue === portfolioItems[k].getAttribute('data-category')){
+        portfolioItems[k].classList.remove('hide');
+        portfolioItems[k].classList.add('show');
+      }else if(filterValue === 'all'){
+        portfolioItems[k].classList.remove('hide');
+        portfolioItems[k].classList.add('show');
+      }else{
+        portfolioItems[k].classList.remove('show');
+        portfolioItems[k].classList.add('hide');
+      }
+    }
+  })
+}
+
+
+
 // text rotation
 var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
