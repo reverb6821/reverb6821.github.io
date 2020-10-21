@@ -518,7 +518,7 @@ body {
           height: 10px;
           width: 100%;
           border-radius: 4px;
-          background-color: $background-primary;
+          background-color: $background-secondary;
           position: relative;
   
           .inner {
@@ -526,7 +526,7 @@ body {
             left: 0;
             top: 0;
             height: 100%;
-            background-color:$secondary-color;
+            background-color:$primary-color;
             border-radius: 4px;
           }
   
