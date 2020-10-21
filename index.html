@@ -1,421 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- * CSS -->
+    <link rel="stylesheet" href="./dist/bundle.css" />
+    <!-- * Remix Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <title>Document</title>
-    <link rel="stylesheet" href="src/css/main.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-</head>
-<body>
-    <!-- Main -->
+  </head>
+  <body>
+    <!-- * Header -->
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+      <!-- * Navbar-->
+      <nav class="menu">
+        <div class="menu-portrait">
+          <div class="portrait"></div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item current">
+            <a href="index.html" class="nav-link"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link"> Who's this guy? </a>
+          </li>
+          <li class="nav-item">
+            <a href="portfolio.html" class="nav-link"> Portfolio </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- *END Navbar -->
+    </header>
+    <!-- * END Header -->
+    <!-- * Main -->
     <div class="main-container">
-        <!-- Sidebar -->
-        <div class="sidebar">
-            <!-- Logo -->
-            <div class="logo">
-                <a href="#">ReverbOD</a>
+      <div class="home">
+        <div class="container">
+          <div class="intro">
+            <h3 class="heading">{Hello World!}</h3>
+            <h1 class="heading"> I'm Giuseppe Gigliotti</h1>
+            <p>        
+              <span
+                class="txt-rotate"
+                data-period="2000"
+                data-rotate='[ "Web Developer", "Javascript Enthusiast", "Creative Mind" ]'
+              ></span>
+            </p>
+            <div class="social-links">
+              <a href="https://github.com/ReverbOD"><i class="ri-github-line"></i></a>
+              <a href="https://codepen.io/reverbod"><i class="ri-codepen-line"></i></a>
+              <a href="https://www.linkedin.com/in/gigliottigiuseppe/"><i class="ri-linkedin-line"></i></a>
             </div>
-            <!-- END Logo-->
-            <!-- Navbar Toggle -->
-            <div class="nav-toggler">
-                <span></span>
-            </div>
-            <!-- END Navbar Toggle -->
-            <!-- Navbar -->
-            <ul class="nav">
-                <li><a href="#" class="active"><i id="icon"class="ri-home-3-line"></i>Home</a></li>
-                <li><a href="#"><i id="icon"class="ri-user-3-line"></i>About</a></li>
-                <li><a href="#"><i id="icon"class="ri-image-2-line"></i>Portfolio</a></li>
-                <li><a href="#"><i id="icon"class="ri-phone-line"></i>Contact</a></li>
-            </ul>
-            <!-- END Navbar -->
-            <!-- Copyright-->
-            <div class="copyright-text">
-                &copy; 2020 Made by <i class="ri-code-s-slash-line"></i>ReverbOD
-            </div>
-            <!-- END Copyright -->
+          </div>
         </div>
-        <!-- END Sidebar-->
-        <!-- Main Content -->
-        <div class="main-content">
-            <!-- Home Section -->
-            <section class="home hidden">
-                <div class="container">
-                    <div class="intro">
-                        <img src="src/img/avatar.jpg" alt="profile" class="shadow-dark">
-                        <h1>Giuseppe Gigliotti</h1>
-                        <p>
-                            I'm
-                            <span
-                            class="txt-rotate"
-                            data-period="2000"
-                            data-rotate='[ "Web Developer", "Javascript Enthusiast", "Creative Mind" ]'></span>
-                        </p>
-                        <div class="social-links">
-                            <a href=""><i class="ri-github-line"></i></a>
-                            <a href=""><i class="ri-codepen-line"></i></a>
-                            <a href=""><i class="ri-linkedin-line"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- END Home Section -->
-            <!-- About Section -->
-            <section class="about">
-                <div class="container">
-                    <!-- About Title-->
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>About Me</h2>
-                        </div>
-                    </div>
-                    <!-- END About Title -->
-                    <div class="row">
-                        <div class="about-content padd-15">
-                            <div class="row">
-                                <div class="about-text padd-15">
-                                    <h3>I'm Giuseppe and I'm a <span>Full Stack Web Developer</span></h3>
-                                    <p>Ever since I was a child I was been passionate about science and technology, a passion born when the first PC with Windows95 and 56k modem arrived at home.<br><br>
-
-                                        From that moment it has been a continuous devouring everything related to technology, going to deepen the web development after discovering Javascript with its runtime Node.JS, of which I am recently starting to approach the more modern library React.js. Over the years I have dealt personally and hobbyist with the development of small programs and bots, for the development and management of my personal passions, which has recently led me to decide to field my knowledge also from a professional point of view , increasing my theoretical training and developing that practice.</p>
-                                </div>
-                            </div>
-                            <!-- Info Panel -->
-                            <div class="row">
-                                <div class="info padd-15">
-                                    <div class="row">
-                                        <div class="info-item padd-15">
-                                            <p>City : <span>Benevento</span> </p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Age : <span>30</span> </p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Email : <span ><a href="mailto:giuseppe.gigliotti@outlook.com">Mail Me</a> </span> </p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p> Skype : <span><a href="skype:giuseppe.gigliotti1?chat">Contact</a></span> </p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Lang : <span>It, Eng, Span</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Github : <span><a href="https://github.com/ReverbOD">View</a></span></p>
-                                        </div>
-                                    </div>
-                                    <!-- Buttons -->
-                                    <div class="row">
-                                        <div class="buttons padd-15">
-                                            <a href="#" class="btn">Download Resume</a>
-                                            <a href="#" class="btn">Contact</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- END Info Panel -->
-                                <!-- Skills Panel -->
-                                <div class="skills padd-15">
-                                    <div class="row">
-                                        <!-- Item 1-->
-                                        <div class="skill-item padd-15">
-                                            <h5>HTML/CSS</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 70%;"></div>
-                                                <div class="skill-percent">70%</div>
-                                            </div>
-                                        </div>
-                                        <!-- END Item 1 -->
-                                        <div class="skill-item padd-15">
-                                            <h5>SCSS/Sass</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width:42%;"></div>
-                                                <div class="skill-percent">42%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>JavaScript</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 47%;"></div>
-                                                <div class="skill-percent">47%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>NodeJS</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 56%;"></div>
-                                                <div class="skill-percent">56%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>ReactJS</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 22%;"></div>
-                                                <div class="skill-percent">22%</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- END Skills Panel -->
-                            </div>
-                            <!-- Resume Panel -->
-                            <div class="row">
-                                <!-- Education -->
-                                <div class="education padd-15">
-                                    <h3 class="title">Education</h3>
-                                    <div class="row">
-                                        <div class="timeline-box padd-15">
-                                            <div class="timeline shadow-dark">
-                                                <!-- Item -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h6 class="timeline-date">
-                                                        <i id="resume-icon" class="ri-calendar-line"></i> March 2020 - Aug 2020
-                                                    </h6>
-                                                    <h4 class="timeline-title">freeCodeCamp - Full Stack Web Developer</h4>
-                                                    <p class="timeline-text">1800 hours of course, which cover:
-                                                        - HTML
-                                                        - CSS
-                                                        - SASS
-                                                        - Javascript (Algorithms, OOP and Functional programming)
-                                                        - Basics of Web Design & Responsive Design
-                                                        - Bootstrap
-                                                        - JQuery
-                                                        - React, Redux and Hooks
-                                                        - The APIs and Microservices with npm, Node.JS & MongoDB
-                                                        - Data visualization with AJAX & JSon
-                                                        - Quality test assurance with Chai & advanced NodeJS and Express.
-                                                    </p>
-                                                </div>
-                                                <!-- END Item -->
-                                                <!-- Item -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h6 class="timeline-date">
-                                                        <i id="resume-icon" class="ri-calendar-line"></i> Oct 2019
-                                                    </h6>
-                                                    <h4 class="timeline-title">Udemy The Web Developer Bootcamp</h4>
-                                                    <p class="timeline-text">47 hours of course, which cover:
-                                                        - HTML5
-                                                        - CSS3
-                                                        - JavaScript
-                                                        - Bootstrap 4
-                                                        - SemanticUI
-                                                        - DOM Manipulation
-                                                        - jQuery
-                                                        - Unix(Command Line) Commands
-                                                        - NodeJS
-                                                        - NPM
-                                                        - ExpressJS
-                                                        - REST
-                                                        - MongoDB
-                                                        - Database Associations
-                                                        - Authentication
-                                                        - PassportJS
-                                                        - Authorization
-                                                    </p>
-                                                </div>
-                                                <!-- END Item -->
-                                            </div>
-                                        </div>
-                                    </div>    
-                                </div>
-                                <!-- END Education-->
-                                <!-- Experience -->
-                                <div class="experience padd-15">
-                                    <h3 class="title">Experience</h3>
-                                    <div class="row">
-                                        <div class="timeline-box padd-15">
-                                            <div class="timeline shadow-dark">
-                                                <!-- Item -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h6 class="timeline-date">
-                                                        <i id="resume-icon" class="ri-calendar-line"></i>Sept 2019 - Oct 2019
-                                                    </h6>
-                                                    <h4 class="timeline-title">ThinkOpen - Junior Web Dev</h4>
-                                                    <p class="timeline-text">
-                                                        Internship in the web field, the main topics and technologies addressed are:<br>
-                                                        - OOP, MVC, .NET, API, REST services, Javascript,HTML, CSS & Bootstrap
-                                                    </p>
-                                                </div>
-                                                <!-- END Item -->
-                                                <!-- Item -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h6 class="timeline-date">
-                                                        <i id="resume-icon" class="ri-calendar-line"></i>Sept 2019 - Oct 2019
-                                                    </h6>
-                                                    <h4 class="timeline-title">Nebulosa Web - Web Dev</h4>
-                                                    <p class="timeline-text">
-                                                        Main Tasks:<br>
-                                                        - Makeover Wordpress site<br>
-                                                        - Added few pages to Wordpress site<br>
-                                                        - Installation and configuration of some plugin on Wordpress site<br>
-                                                    </p>
-                                                </div>
-                                                <!-- END Item -->
-                                                <!-- Item -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h6 class="timeline-date">
-                                                        <i id="resume-icon" class="ri-calendar-line"></i> Sept 2018 - Jan 2019
-                                                    </h6>
-                                                    <h4 class="timeline-title">Fiverr - Web Dev Freelancer</h4>
-                                                    <p class="timeline-text">
-                                                        Main services offered:<br>
-                                                        - Template creation in HTML / CSS / Bootstrap / JS<br>
-                                                        - Wordpress theme customization<br>
-                                                        - Wordpress Plugin installation and configuration<br>
-                                                        - Wordpress website<br>
-                                                    </p>
-                                                </div>
-                                                <!-- END Item -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- END Experience -->
-                            </div>
-                            <!-- END Resume Panel -->
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- END About Section -->
-            <!-- Portfolio -->
-            <section class="portfolio">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Portfolio</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="portfolio-filter padd-15">
-                            <button type="button" class="active" data-filter="all">All</button>
-                            <button type="button" data-filter="template">Template</button>
-                            <button type="button" data-filter="website">Website</button>
-                            <button type="button" data-filter="app">App</button>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!-- Portfolio Item -->
-                        <div class="portfolio-item padd-15" data-category="template">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="src/img/portfolio/vanilla.png" alt="portfolio">
-                                </div>
-                                <div class="portfolio-info">
-                                    <h4>Vanilla Template</h4>
-                                    <div class="icon">
-                                        <i class="ri-search-2-line" id="search-icon"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- END Portfolio Item -->
-                        <!-- Portfolio Item -->
-                        <div class="portfolio-item padd-15" data-category="template">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="src/img/portfolio/ice.jpg" alt="portfolio">
-                                </div>
-                                <div class="portfolio-info">
-                                    <h4>Ice Portfolio</h4>
-                                    <div class="icon">
-                                        <i class="ri-search-2-line" id="search-icon"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- END Portfolio Item -->
-                        <!-- Portfolio Item -->
-                        <div class="portfolio-item padd-15" data-category="template">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="src/img/portfolio/strigo.jpg" alt="portfolio">
-                                </div>
-                                <div class="portfolio-info">
-                                    <h4>Strigo Tempalte</h4>
-                                    <div class="icon">
-                                        <i class="ri-search-2-line" id="search-icon"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- END Portfolio Item -->
-                        <!-- Portfolio Item -->
-                        <div class="portfolio-item padd-15" data-category="app">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="src/img/portfolio/aquariumnext.jpg" alt="portfolio">
-                                </div>
-                                <div class="portfolio-info">
-                                    <h4>AquariumNext</h4>
-                                    <div class="icon">
-                                        <i class="ri-search-2-line" id="search-icon"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- END Portfolio Item -->   
-                        <!-- Portfolio Item -->
-                        <div class="portfolio-item padd-15" data-category="website">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="src/img/portfolio/maurodr.jpg" alt="portfolio">
-                                </div>
-                                <div class="portfolio-info">
-                                    <h4>Mauro Di Rubbo Photographer</h4>
-                                    <div class="icon">
-                                        <i class="ri-search-2-line" id="search-icon"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- END Portfolio Item --> 
-                        <!-- Portfolio Item -->
-                        <div class="portfolio-item padd-15" data-category="template">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="src/img/portfolio/xeno.jpg" alt="portfolio">
-                                </div>
-                                <div class="portfolio-info">
-                                    <h4>Xeno Template</h4>
-                                    <div class="icon">
-                                        <i class="ri-search-2-line" id="search-icon"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- END Portfolio Item -->                                                                    
-                    </div>
-                </div>
-            </section>
-            <!-- END Portfolio -->
-        </div>
-        <!-- END Main Content -->
+      </div>
     </div>
-    <!-- END Main -->
-
-    <!-- Lightbox-->
-    <div class="lightbox">
-        <div class="lightbox-content">
-            <div class="lightbox-close"><i class="ri-close-fill" id="portfolio-close"></i></div>
-            <img src="src/img/portfolio/vanilla.png" class="lightbox-img" alt="">
-            <div class="lightbox-caption">
-                <div class="caption-text"></div>
-                <div class="caption-counter"></div>
-            </div>
-        </div>
-        <div class="lightbox-controls">
-            <div class="next-item" onclick="nextItem()"><i class="ri-arrow-left-s-line" id="portfolio-next"></i></div>
-            <div class="prev-item" onclick="prevItem()"><i class="ri-arrow-right-s-line" id="portfolio-prev"></i></div>
-        </div>
-    </div>
-    <!-- END Lightbox -->
-
-    <!-- JS -->
-    <script src="src/js/index.js"></script>
-</body>
+    <!-- * END Main -->
+    <script src="./dist/bundle.js"></script>
+  </body>
 </html>
