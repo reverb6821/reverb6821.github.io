@@ -215,13 +215,15 @@ header {
     text-align: center;
   }
 
-  ul.menu-nav, div.menu-portrait {
+  ul.menu-nav,
+div.menu-portrait {
     float: none;
     width: 100%;
     min-height: 0;
   }
 
-  ul.menu-nav.show, div.menu-portrait.show {
+  ul.menu-nav.show,
+div.menu-portrait.show {
     transform: translate3d(0, 0, 0);
   }
 
@@ -310,8 +312,8 @@ h2.title {
 }
 
 /*#profile{
- background: url(./img/avatar.jpg);
-}*/
+   background: url(./img/avatar.jpg);
+  }*/
 .btn {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -462,7 +464,8 @@ h2.title {
 }
 
 @media (max-width: 767px) {
-  .about .about-content .img, .about .about-content .description {
+  .about .about-content .img,
+.about .about-content .description {
     width: 100%;
   }
 
@@ -513,21 +516,21 @@ h2.title {
   padding: 80px 0px;
   background-color: #292929;
 }
-.portfolio .portfolio-content {
-  float: left;
-  width: 100%;
+.portfolio .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 0px 0px;
 }
-.portfolio .portfolio-content .card {
-  float: left;
-  width: 33.33%;
+.portfolio .grid-container .card {
   padding: 15px;
 }
-.portfolio .portfolio-content .card .box {
+.portfolio .grid-container .card .box {
   background-color: #353535;
   padding: 15px;
   position: relative;
 }
-.portfolio .portfolio-content .card .box::before {
+.portfolio .grid-container .card .box::before {
   content: "";
   position: absolute;
   left: 0;
@@ -538,10 +541,10 @@ h2.title {
   z-index: 1;
   transition: width 0.5s ease;
 }
-.portfolio .portfolio-content .card .box:hover::before {
+.portfolio .grid-container .card .box:hover::before {
   width: 100%;
 }
-.portfolio .portfolio-content .card .box h3 {
+.portfolio .grid-container .card .box h3 {
   margin: 0;
   padding: 15px 0 5px;
   color: #A4A5A6;
@@ -549,7 +552,7 @@ h2.title {
   font-weight: 600;
   letter-spacing: 0.5px;
 }
-.portfolio .portfolio-content .card .box h4 {
+.portfolio .grid-container .card .box h4 {
   margin: 0;
   padding: 5px 0px 25px;
   color: #D73231;
@@ -558,19 +561,22 @@ h2.title {
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
-.portfolio .portfolio-content .card .box img {
+.portfolio .grid-container .card .box img {
   width: 100%;
   display: block;
 }
 
-.btn-github, .btn-view {
+.btn-github,
+.btn-view {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
 }
 
-.btn:hover, .btn-github:hover, .btn-view:hover {
+.btn:hover,
+.btn-github:hover,
+.btn-view:hover {
   background: #D73231;
   color: #242526;
 }
