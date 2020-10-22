@@ -158,9 +158,19 @@ header {
   transition-delay: 0.4s;
 }
 
+#bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  visibility: visible;
+}
+
 .home {
-  /*background-color: $background-primary;*/
-  background: url(images/259b7f5f2209f074a91dc61ec4bb4c18.gif);
   background-size: cover;
   min-height: 100vh;
   font-family: "Lato", sans-serif;
@@ -554,7 +564,7 @@ h2.title {
 }
 .portfolio .grid-container .card .box h4 {
   margin: 0;
-  padding: 5px 0px 25px;
+  padding: 5px 0px 20px;
   color: #D73231;
   font-size: 16px;
   font-weight: 700;

@@ -1,255 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Giuseppe Gigliotti Dev</title>
-    <!-- * CSS -->
-    <link rel="stylesheet" href="./dist/bundle.css" />
-    <!-- * Remix Icons -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- * Header -->
-    <header>
-      <!-- * Menu Button -->
-      <div class="menu-btn">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giuseppe Gigliotti Dev</title>
+  <!-- * CSS -->
+  <link rel="stylesheet" href="./dist/bundle.css" />
+  <!-- * Remix Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- *Video Background-->
+  <video autoplay loop playsinline muted id="bg">
+    <source src="./src/background/background.mp4" type="video/mp4">
+  </video>
+  <!-- *END Video Background -->
+  <!-- * Header -->
+  <header>
+    <!-- * Menu Button -->
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+    <!-- * END Menu Button -->
+    <!-- * Navbar-->
+    <nav class="menu">
+      <div class="menu-portrait">
+        <div class="portrait"></div>
       </div>
-      <!-- * END Menu Button -->
-      <!-- * Navbar-->
-      <nav class="menu">
-        <div class="menu-portrait">
-          <div class="portrait"></div>
-        </div>
-        <ul class="menu-nav">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link"> Home </a>
-          </li>
-          <li class="nav-item current">
-            <a href="about.html" class="nav-link"> Who's this guy? </a>
-          </li>
-          <li class="nav-item">
-            <a href="portfolio.html" class="nav-link"> Portfolio </a>
-          </li>
-        </ul>
-      </nav>
-      <!-- *END Navbar -->
-    </header>
-    <!-- * END Header -->
-    <!-- * Main - About -->
-    <div class="main-container">
-      <div class="home">
-        <div class="container">
-          <!-- ! About - Info -->
-          <section class="about" id="about">
-            <div class="container">
-              <h2 class="title">Who's this guy?</h2>
-              <div class="about-content">
-                <div class="img">
-                  <img id="profile" alt="profile" src="./src/img/avatar.jpg" />
+      <ul class="menu-nav">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link"> Home </a>
+        </li>
+        <li class="nav-item current">
+          <a href="about.html" class="nav-link"> Who's this guy? </a>
+        </li>
+        <li class="nav-item">
+          <a href="portfolio.html" class="nav-link"> Portfolio </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- *END Navbar -->
+  </header>
+  <!-- * END Header -->
+  <!-- * Main - About -->
+  <div class="main-container">
+    <div class="home">
+      <div class="container">
+        <!-- ! About - Info -->
+        <section class="about" id="about">
+          <div class="container">
+            <h2 class="title">Who's this guy?</h2>
+            <div class="about-content">
+              <div class="img">
+                <img id="profile" alt="profile" src="./src/img/avatar.jpg" />
+              </div>
+              <div class="description">
+                <h4>Hi, I'm Giuseppe Gigliotti</h4>
+                <h5>Junior Full Stack Developer</h5>
+                <p>
+                  Ever since I was a child I was been passionate about science and technology, a passion born when the
+                  first PC with Windows95 and 56k modem arrived at home.
+                </p>
+                <p>
+                  From that moment it has been a continuous devouring everything related to technology, going to deepen
+                  the web development after discovering Javascript with its runtime Node.JS, of which I am recently
+                  starting to approach the more modern library React.js. Over the years I have dealt personally and
+                  hobbyist with the development of small programs and bots, for the development and management of my
+                  personal passions, which has recently led me to decide to field my knowledge also from a professional
+                  point of view , increasing my theoretical training and developing that practice
+                </p>
+                <p>
+                  <button type="button" class="btn">Donwload CV</button>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ! END About - Info-->
+        <!-- ! Tech -->
+        <section class="tech" id="tech">
+          <div class="container">
+            <h2 class="title">My Best</h2>
+            <div class="tech-content">
+              <div class="card">
+                <div class="box">
+                  <div class="icon">
+                    <span class="ri-computer-line"></span>
+                  </div>
+                  <h3>Web Development</h3>
+                  <p>
+                    Build a beautiful website with a responsive web design technique that allows it to adapt to all the
+                    resolutions of the various devices in circulation.
+                  </p>
                 </div>
-                <div class="description">
-                  <h4>Hi, I'm Giuseppe Gigliotti</h4>
-                  <h5>Junior Full Stack Developer</h5>
+              </div>
+              <div class="card">
+                <div class="box">
+                  <div class="icon">
+                    <span class="ri-smartphone-line"></span>
+                  </div>
+                  <h3>Responsive Design</h3>
                   <p>
-                    Ever since I was a child I was been passionate about science and technology, a passion born when the first PC with Windows95 and 56k modem arrived at home.
+                    Build a beautiful website with a responsive web design technique that allows it to adapt to all the
+                    resolutions of the various devices in circulation
                   </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="box">
+                  <div class="icon">
+                    <span class="ri-code-s-slash-line"></span>
+                  </div>
+                  <h3>Clean Code</h3>
                   <p>
-                    From that moment it has been a continuous devouring everything related to technology, going to deepen the web development after discovering Javascript with its runtime Node.JS, of which I am recently starting to approach the more modern library React.js. Over the years I have dealt personally and hobbyist with the development of small programs and bots, for the development and management of my personal passions, which has recently led me to decide to field my knowledge also from a professional point of view , increasing my theoretical training and developing that practice
+                    “Any fool can write code that a computer can understand. Good programmers write code that humans can
+                    understand.” – Martin Fowler.
                   </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="box">
+                  <div class="icon">
+                    <span class="ri-terminal-line"></span>
+                  </div>
+                  <h3>OOP</h3>
                   <p>
-                    <button type="button" class="btn">Donwload CV</button>
+                    Using Objects and methods will make the code very readable and understandable. Modularity for easier
+                    troubleshooting & the reuse of code through inheritance.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="box">
+                  <div class="icon">
+                    <span class="ri-folder-4-line"></span>
+                  </div>
+                  <h3>MVC</h3>
+                  <p>
+                    Making applications using the MVC architectural pattern that separates an application into three
+                    main logical components Model, View, and Controller
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="box">
+                  <div class="icon">
+                    <span class="ri-settings-2-line"></span>
+                  </div>
+                  <h3>RESTapis</h3>
+                  <p>
+                    For a lightweight architecture that simplifies network communication on the web, and RESTful
+                    services and APIs are those web services that adhere to REST architecture
                   </p>
                 </div>
               </div>
             </div>
-          </section>
-          <!-- ! END About - Info-->
-          <!-- ! Tech -->
-          <section class="tech" id="tech">
-            <div class="container">
-              <h2 class="title">My Best</h2>
-              <div class="tech-content">
-                <div class="card">
-                  <div class="box">
-                    <div class="icon">
-                      <span class="ri-computer-line"></span>
-                    </div>
-                    <h3>Web Development</h3>
-                    <p>
-                      Build a beautiful website with a responsive web design technique that allows it to adapt to all the resolutions of the various devices in circulation.
-                    </p>
-                  </div>
+          </div>
+        </section>
+        <!-- ! END Tech-->
+        <!-- ! About - Skills -->
+        <section class="skills">
+          <div class="container">
+            <h2 class="title">Skills</h2>
+            <div class="skills-content">
+              <div class="card">
+                <label>HTML</label>
+                <div class="progress" data-text="73%">
+                  <div class="inner" style="width: 73%"></div>
                 </div>
-                <div class="card">
-                  <div class="box">
-                    <div class="icon">
-                      <span class="ri-smartphone-line"></span>
-                    </div>
-                    <h3>Responsive Design</h3>
-                    <p>
-                      Build a beautiful website with a responsive web design technique that allows it to adapt to all the resolutions of the various devices in circulation
-                    </p>
-                  </div>
+              </div>
+              <div class="card">
+                <label>CSS</label>
+                <div class="progress" data-text="60%">
+                  <div class="inner" style="width: 60%"></div>
                 </div>
-                <div class="card">
-                  <div class="box">
-                    <div class="icon">
-                      <span class="ri-code-s-slash-line"></span>
-                    </div>
-                    <h3>Clean Code</h3>
-                    <p>
-                      “Any fool can write code that a computer can understand. Good programmers write code that humans can understand.” – Martin Fowler.
-                    </p>
-                  </div>
+              </div>
+              <div class="card">
+                <label>SCSS/SASS</label>
+                <div class="progress" data-text="45%">
+                  <div class="inner" style="width: 45%"></div>
                 </div>
-                <div class="card">
-                  <div class="box">
-                    <div class="icon">
-                      <span class="ri-terminal-line"></span>
-                    </div>
-                    <h3>OOP</h3>
-                    <p>
-                     Using Objects and methods will make the code very readable and understandable. Modularity for easier troubleshooting & the reuse of code through inheritance.
-                    </p>
-                  </div>
+              </div>
+              <div class="card">
+                <label>Bootstrap</label>
+                <div class="progress" data-text="39%">
+                  <div class="inner" style="width: 39%"></div>
                 </div>
-                <div class="card">
-                  <div class="box">
-                    <div class="icon">
-                      <span class="ri-folder-4-line"></span>
-                    </div>
-                    <h3>MVC</h3>
-                    <p>
-                      Making applications using the MVC architectural pattern that separates an application into three main logical components Model, View, and Controller
-                    </p>
-                  </div>
+              </div>
+              <div class="card">
+                <label>JavaScript</label>
+                <div class="progress" data-text="58%">
+                  <div class="inner" style="width: 58%"></div>
                 </div>
-                <div class="card">
-                  <div class="box">
-                    <div class="icon">
-                      <span class="ri-settings-2-line"></span>
-                    </div>
-                    <h3>RESTapis</h3>
-                    <p>
-                      For a lightweight architecture that simplifies network communication on the web, and RESTful services and APIs are those web services that adhere to REST architecture
-                    </p>
-                  </div>
+              </div>
+              <div class="card">
+                <label>NodeJS</label>
+                <div class="progress" data-text="36%">
+                  <div class="inner" style="width: 36%"></div>
+                </div>
+              </div>
+              <div class="card">
+                <label>ReactJS</label>
+                <div class="progress" data-text="22%">
+                  <div class="inner" style="width: 22%"></div>
+                </div>
+              </div>
+              <div class="card">
+                <label>MySQL</label>
+                <div class="progress" data-text="52%">
+                  <div class="inner" style="width: 52%"></div>
                 </div>
               </div>
             </div>
-          </section>
-          <!-- ! END Tech-->
-          <!-- ! About - Skills -->
-          <section class="skills">
-            <div class="container">
-              <h2 class="title">Skills</h2>
-              <div class="skills-content">
-                <div class="card">
-                  <label>HTML</label>
-                  <div class="progress" data-text="73%">
-                    <div class="inner" style="width: 73%"></div>
-                  </div>
-                </div>
-                <div class="card">
-                  <label>CSS</label>
-                  <div class="progress" data-text="60%">
-                    <div class="inner" style="width: 60%"></div>
-                  </div>
-                </div>
-                <div class="card">
-                  <label>SCSS/SASS</label>
-                  <div class="progress" data-text="45%">
-                    <div class="inner" style="width: 45%"></div>
-                  </div>
-                </div>
-                <div class="card">
-                  <label>Bootstrap</label>
-                  <div class="progress" data-text="39%">
-                    <div class="inner" style="width: 39%"></div>
-                  </div>
-                </div>
-                <div class="card">
-                  <label>JavaScript</label>
-                  <div class="progress" data-text="58%">
-                    <div class="inner" style="width: 58%"></div>
-                  </div>
-                </div>
-                <div class="card">
-                  <label>NodeJS</label>
-                  <div class="progress" data-text="36%">
-                    <div class="inner" style="width: 36%"></div>
-                  </div>
-                </div>
-                <div class="card">
-                  <label>ReactJS</label>
-                  <div class="progress" data-text="22%">
-                    <div class="inner" style="width: 22%"></div>
-                  </div>
-                </div>
-                <div class="card">
-                  <label>MySQL</label>
-                  <div class="progress" data-text="52%">
-                    <div class="inner" style="width: 52%"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- ! END About - Skills -->
-        </div>
+          </div>
+        </section>
+        <!-- ! END About - Skills -->
       </div>
     </div>
-    <!-- * END Main - About -->
-    <!-- * Footer -->
-    <footer>
-      <div class="container">
-        <div class="footer-content">
-          <div class="box">
-            <div class="icon">
-              <span class="ri-skype-line"></span>
-            </div>
-            <h4>Skype</h4>
-            <p><a href="skype:giuseppe.gigliotti1?chat">Contact</a></p>
+  </div>
+  <!-- * END Main - About -->
+  <!-- * Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="box">
+          <div class="icon">
+            <span class="ri-skype-line"></span>
           </div>
-          <div class="box">
-            <div class="icon">
-              <span class="ri-mail-send-line"></span>
-            </div>
-            <h4>E-Mail</h4>
-            <p><a href="mailto:giuseppe.gigliotti@outlook.com">Send</a></p>
-          </div>
-          <div class="box">
-            <div class="icon">
-              <span class="ri-map-pin-line"></span>
-            </div>
-            <h4>Location</h4>
-            <p>Benevento</p>
-          </div>
+          <h4>Skype</h4>
+          <p><a href="skype:giuseppe.gigliotti1?chat">Contact</a></p>
         </div>
-        <div class="social">
-          <ul>
-            <li>
-              <a href="https://github.com/ReverbOD" target="_blank"><span class="ri-github-line"></span></a>
-            </li>
-            <li>
-              <a href="https://codepen.io/reverbod" target="_blank"><span class="ri-codepen-line"></span></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/gigliottigiuseppe/" target="_blank"><span class="ri-linkedin-line"></span></a>
-            </li>
-          </ul>
+        <div class="box">
+          <div class="icon">
+            <span class="ri-mail-send-line"></span>
+          </div>
+          <h4>E-Mail</h4>
+          <p><a href="mailto:giuseppe.gigliotti@outlook.com">Send</a></p>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <span class="ri-map-pin-line"></span>
+          </div>
+          <h4>Location</h4>
+          <p>Benevento</p>
         </div>
       </div>
-    </footer>
-    <!-- * END Footer -->
-    <!-- * JS -->
-    <script src="./dist/bundle.js"></script>
-  </body>
+      <div class="social">
+        <ul>
+          <li>
+            <a href="https://github.com/ReverbOD" target="_blank"><span class="ri-github-line"></span></a>
+          </li>
+          <li>
+            <a href="https://codepen.io/reverbod" target="_blank"><span class="ri-codepen-line"></span></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/gigliottigiuseppe/" target="_blank"><span
+                class="ri-linkedin-line"></span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- * END Footer -->
+  <!-- * JS -->
+  <script src="./dist/bundle.js"></script>
+</body>
+
 </html>
