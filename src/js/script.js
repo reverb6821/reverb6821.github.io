@@ -6,26 +6,6 @@ $(window).on('load', function () {
   gsap.to('#navigation-content', 0, { display: 'none' });
   gsap.to('#navigation-content', 0, { display: 'flex', delay: 1 });
 });
-$(function () {
-  $('.color-panel').on('click', function (e) {
-    e.preventDefault();
-    $('.color-changer').toggleClass('color-changer-active');
-  });
-  $('.colors a').on('click', function (e) {
-    e.preventDefault();
-    var attr = $(this).attr('title');
-    console.log(attr);
-    $('head').append('<link rel="stylesheet" href="css/' + attr + '.css">');
-  });
-});
-$(function () {
-  $('.menubar').on('click', function () {
-    gsap.to('#navigation-content', 0.6, { y: 0 });
-  });
-  $('.navigation-close').on('click', function () {
-    gsap.to('#navigation-content', 0.6, { y: '-100%' });
-  });
-});
 
 $(function () {
   $('#about-link').on('click', function () {
@@ -42,20 +22,6 @@ $(function () {
     gsap.to('#about', 0, { display: 'block', delay: 0.7 });
     gsap.to('#navigation-content', 0, { display: 'flex', delay: 2 });
   });
-  $('#contact-link').on('click', function () {
-    gsap.to('#navigation-content', 0, { display: 'none', delay: 0.7 });
-    gsap.to('#navigation-content', 0, { y: '-100%', delay: 0.7 });
-    gsap.to('#header', 0, { display: 'none' });
-    gsap.to('#about', 0, { display: 'none' });
-    gsap.to('#blog', 0, { display: 'none' });
-    gsap.to('#portfolio', 0, { display: 'none' });
-    gsap.to('#breaker', 0, { display: 'block' });
-    gsap.to('#breaker-two', 0, { display: 'block', delay: 0.1 });
-    gsap.to('#breaker', 0, { display: 'none', delay: 2 });
-    gsap.to('#breaker-two', 0, { display: 'none', delay: 2 });
-    gsap.to('#contact', 0, { display: 'block', delay: 0.7 });
-    gsap.to('#navigation-content', 0, { display: 'flex', delay: 2 });
-  });
   $('#portfolio-link').on('click', function () {
     gsap.to('#navigation-content', 0, { display: 'none', delay: 0.7 });
     gsap.to('#navigation-content', 0, { y: '-100%', delay: 0.7 });
@@ -68,20 +34,6 @@ $(function () {
     gsap.to('#breaker', 0, { display: 'none', delay: 2 });
     gsap.to('#breaker-two', 0, { display: 'none', delay: 2 });
     gsap.to('#portfolio', 0, { display: 'block', delay: 0.7 });
-    gsap.to('#navigation-content', 0, { display: 'flex', delay: 2 });
-  });
-  $('#blog-link').on('click', function () {
-    gsap.to('#navigation-content', 0, { display: 'none', delay: 0.7 });
-    gsap.to('#navigation-content', 0, { y: '-100%', delay: 0.7 });
-    gsap.to('#header', 0, { display: 'none' });
-    gsap.to('#about', 0, { display: 'none' });
-    gsap.to('#portfolio', 0, { display: 'none' });
-    gsap.to('#contact', 0, { display: 'none' });
-    gsap.to('#breaker', 0, { display: 'block' });
-    gsap.to('#breaker-two', 0, { display: 'block', delay: 0.1 });
-    gsap.to('#breaker', 0, { display: 'none', delay: 2 });
-    gsap.to('#breaker-two', 0, { display: 'none', delay: 2 });
-    gsap.to('#blog', 0, { display: 'block', delay: 0.7 });
     gsap.to('#navigation-content', 0, { display: 'flex', delay: 2 });
   });
   $('#home-link').on('click', function () {
