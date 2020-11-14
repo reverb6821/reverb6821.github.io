@@ -1,74 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- * CSS -->
-    <link rel="stylesheet" href="./dist/bundle.css" />
-    <!-- * Remix Icons -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <title>Giuseppe Gigliotti Dev</title>
-  </head>
-  <body>
-    <!-- *Video Background-->
-    <video autoplay loop playsinline muted id="bg">
-      <source src="./src/background/background.mp4" type="video/mp4">
-    </video>
-    <!-- *END Video Background -->
-    <!-- * Header -->
-    <header>
-      <div class="menu-btn">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-      </div>
-      <!-- * Navbar-->
-      <nav class="menu">
-        <div class="menu-portrait">
-          <div class="portrait"></div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Giuseppe Gigliotti Dev - Portfolio" />
+    <title>Giuseppe Gigliotti Dev - Portfolio</title>
+    <link rel="icon" type="image/png" href="./src/media/images/favicon.png">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div class="cursor"></div>
+        <div id="loader">
+            <span class="color">Giuseppe</span>Gigliotti
         </div>
-        <ul class="menu-nav">
-          <li class="nav-item current">
-            <a href="index.html" class="nav-link"> Home </a>
-          </li>
-          <li class="nav-item">
-            <a href="about.html" class="nav-link"> Who's this guy? </a>
-          </li>
-          <li class="nav-item">
-            <a href="portfolio.html" class="nav-link"> Portfolio </a>
-          </li>
-        </ul>
-      </nav>
-      <!-- *END Navbar -->
-    </header>
-    <!-- * END Header -->
-    <!-- * Main -->
-    <div class="main-container">
-      <div class="home">
-        <div class="container">
-          <div class="intro">
-            <h3 class="heading">{Hello World!}</h3>
-            <h1 class="heading"> I'm Giuseppe Gigliotti</h1>
-            <p>        
-              <span
-                class="txt-rotate"
-                data-period="2000"
-                data-rotate='[ "Web Developer", "Javascript Enthusiast", "Creative Mind" ]'
-              ></span>
-            </p>
-            <div class="social-links">
-              <a href="https://github.com/ReverbOD" target="_blank"><i class="ri-github-line"></i></a>
-              <a href="https://codepen.io/reverbod" target="_blank"><i class="ri-codepen-line"></i></a>
-              <a href="https://www.linkedin.com/in/gigliottigiuseppe/" target="_blank"><i class="ri-linkedin-line"></i></a>
+        <div id="breaker">
+        </div>
+        <div id="breaker">
+        </div>
+        <div id="navigation-content">
+            <div class="logo">
+                <img src="./src/media/images/logo.png" alt="logo">
             </div>
-          </div>
+            <div class="navigation-close">
+                <span class="close-first"></span>
+                <span class="close-second"></span>
+            </div>
+            <div class="navigation-links">
+                <a href="#" data-text="HOME" id="home-link">HOME</a>
+                <a href="#" data-text="ABOUT" id="about-link">ABOUT</a>
+                <a href="#" data-text="PORTFOLIO" id="portfolio-link">PORTFOLIO</a>
+            </div>
         </div>
-      </div>
+        <div id="navigation-bar">
+            <img src="./src/media/images/logo.png" alt="logo">
+            <div class="menubar">
+                <span class="first-span"></span>
+                <span class="second-span"></span>
+                <span class="third-span"></span>
+            </div>
+        </div>
+        <div id="header">
+            <video autoplay loop playsinline muted id="bg">
+                <source src="./src/media/background/background.mp4" type="video/mp4">
+            </video>
+            <div class="social-media-links">
+                <a href="https://www.linkedin.com/in/gigliottigiuseppe/" target="_blank"><img
+                        src="./src/media/images/icon/linkedin-line.png" class="social-media" alt="linkedin-logo"></a>
+                <a href="https://github.com/ReverbOD" target="_blank"><img src="./src/media/images/icon/github-line.png"
+                        class="social-media" alt="github-logo"></a>
+                <a href="https://codepen.io/reverbod" target="_blank"><img src="./src/media/images/icon/codepen-line.png"
+                        class="social-media" alt="linkedin-logo"></a>
+            </div>
+            <div class="header-content">
+                <div class="header-content-box">
+                    <video autoplay loop playsinline muted id="bg">
+                        <source src="./src/media/background/background.mp4" type="video/mp4">
+                    </video>
+                    <div class="firstline"><span class="color">Giuseppe </span>Gigliotti</div>
+                    <div class="secondline">
+                        I'm a
+                        <span class="txt-rotate color" data-period="1200"
+                            data-rotate='[ " Full Stack Web Developer.", " Javascript Enthusiast.", " Creative Mind." ]'></span>
+                        <span class="slash">|</span>
+                    </div>
+                    <div class="contact">
+                        <a href="mailto:giuseppe.gigliotti@outlook.com""><img src="./src/media/images/icon/mail-send-line.png"
+                            alt="email-pic" class="contactpic"></a>
+                        <a href="skype:giuseppe.gigliotti1?chat"><img src="./src/media/images/icon/skype-line.png" alt="phone-pic"
+                                class="contactpic"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="about">
+            <div id="about-content">
+                <div class="about-header">
+                    About <span class="color">Me</span>
+                    <span class="header-caption">Who's this <span class="color"> guy?</span></span>
+                </div>
+                <div class="about-main">
+                    <div class="about-first-paragraph">
+                        <span class="about-first-line">
+                            I'm a
+                            <span class="color">Full Stack Web Developer</span>
+                            based in Benevento , IT </span>
+                        <br>
+                        <span class="about-second-line" style="font-weight: 300;"> Ever since I was a child I was been passionate about technology, a passion born when the
+                            first PC with Windows95 and 56k modem arrived at home.<br> From that moment it has been a
+                            continuous devouring everything related to technology, going to deepen
+                            the web development after discovering JavaScript with its runtime NodeJS, of which I am
+                            recently starting to approach the more modern library ReactJS.</span>
+                        <div class="cv">
+                            <a href="#"><button>Download <span class="colors">CV</span></button></a>
+                        </div>
+                    </div>
+                    <div class="about-img">
+                        <img src="./src/media/images/about.jpg" alt="about.png">
+                    </div>
+                </div>
+
+            </div>
+            <!--services start-->
+            <div id="services">
+                <div class="services-heading">
+                    <span class="color">My</span> Best
+                </div>
+                <div class="services-content">
+                    <div class="service">
+                        <div class="service-img">
+                            <img src="./src/media/images/services/macbook-line.png" alt="service-one">
+                        </div>
+                        <div class="service-description">
+                            <h2>Web Development</h2>
+                            <p> Build a beautiful website with a responsive web design technique that allows it to adapt
+                                to all the
+                                resolutions of the various devices in circulation.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="service-img">
+                            <img src="./src/media/images/services/terminal-line.png" alt="service-two">
+                        </div>
+                        <div class="service-description">
+                            <h2>Clean Code</h2>
+                            <p> “Any fool can write code that a computer can understand. Good programmers write code
+                                that humans can
+                                understand.” – <i>Martin Fowler</i>.</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="service-img">
+                            <img src="./src/media/images/services/server-line.png" alt="service-three">
+                        </div>
+                        <div class="service-description">
+                            <h2>APIs</h2>
+                            <p> For a lightweight architecture that simplifies network communication on the web, and
+                                RESTful
+                                services and APIs are those web services that adhere to REST architecture</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="skills">
+                <div class="skills-header">
+                    My <span class="color"> Skills</span>
+                </div>
+                <div class="skills-content " style="text-align: center;">
+                    <div class="skill-item">
+                        <div class="skill-text">
+                            <div class="skill-title">
+                                HTML/CSS
+                            </div>
+                        </div>
+                        <div class="skill-prog">
+                            <div class="html-progress">70%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-text">
+                            <div class="skill-title">
+                                Scss/Sass
+                            </div>
+                        </div>
+                        <div class="skill-prog">
+                            <div class="scss-progress">40%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-text">
+                            <div class="skill-title">
+                                JavaScript
+                            </div>
+                        </div>
+                        <div class="skill-prog">
+                            <div class="js-progress">60%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item skil">
+                        <div class="skill-text">
+                            <div class="skill-title">
+                                JQuery
+                            </div>
+                        </div>
+                        <div class="skill-prog">
+                            <div class="jquery-progress">43%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item skil">
+                        <div class="skill-text">
+                            <div class="skill-title">
+                                NodeJS
+                            </div>
+                        </div>
+                        <div class="skill-prog">
+                            <div class="node-progress">43%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item skil">
+                        <div class="skill-text">
+                            <div class="skill-title">
+                                ReactJS
+                            </div>
+                        </div>
+                        <div class="skill-prog">
+                            <div class="react-progress">24%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item skil">
+                        <div class="skill-text">
+                            <div class="skill-title">
+                                PHP
+                            </div>
+                        </div>
+                        <div class="skill-prog">
+                            <div class="php-progress">35%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item skil">
+                        <div class="skill-text">
+                            <div class="skill-title">
+                                MySQL
+                            </div>
+                        </div>
+                        <div class="skill-prog">
+                            <div class="sql-progress">55%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-text">
+                    <img src="./src/media/images/icon/copyright-line.png" alt="copyright-img" class="images" height="14px">
+                    ReverbOD
+                </div>
+            </div>
+        </div>
+        <div id="portfolio">
+            <div class="portfolio-header"> <span class="color"> My </span> Portfolio
+                <span class="header-caption"> Some Of My <span class="color"> Works</span></span></div>
+            <div id="portfolio-content">
+                <div class="portfolio">
+                    <div class="portfolio-image">
+                        <img src="./src/media/images/portfolio/aquariumnext.jpg" alt="portfolio-first">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>AquariumNext</h2>
+                        <p>Webapp builded with NodeJS, ExpressJS & SQL as backend, on the frontend I've used EJS,
+                            Bootstrap4 & JQuery</p>
+                        <div class="button">
+                            <a href="https://aquariumnext.herokuapp.com/" target="_blank"><button><span class="index">
+                                        View <i class="gg-arrow-right"></i></span></button></a>
+                            <a href="https://github.com/ReverbOD/AquariumNext2.0" target="_blank"><button><span
+                                        class="index"> View Code<i class="gg-arrow-right"></i></span></button></a>
+                        </div>
+                        <div class="button"></div>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <div class="portfolio-image">
+                        <img src="./src/media/images/portfolio/maurodr.jpg" alt="portfolio-second">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Mauro Di Rubbo Photographer</h2>
+                        <p>Website for a professional Photographer</p>
+                        <div class="button"><a href="https://maurodirubbophotographer.it/" target="_blank"><button><span
+                                        class="index"> View Project<i class="gg-arrow-right"></i></span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <div class="portfolio-image">
+                        <img src="./src/media/images/portfolio/ice.jpg" alt="portfolio-third">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Ice Portfolio</h2>
+                        <p>A dark template portfolio for developers and designers, made with Bootstrap4 & Jquery</p>
+                        <div class="button">
+                            <a href="https://reverbod.github.io/ice-portfolio" target="_blank"><button><span
+                                        class="index"> View <i class="gg-arrow-right"></i></span></button></a>
+                            <a href="https://github.com/ReverbOD/ice-portfolio" target="_blank"><button><span
+                                        class="index"> Download<i class="gg-arrow-right"></i></span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <div class=" portfolio-image">
+                        <img src="./src/media/images/portfolio/strigo.jpg" alt="portfolio-fourth">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Strigo Template</h2>
+                        <p>A dark enterprise template, made with Bootstrap & JQuery</p>
+                        <div class="button">
+                            <a href="https://reverbod.github.io/strigo-template/" target="_blank"><button><span
+                                        class="index"> View <i class="gg-arrow-right"></i></span></button></a>
+                            <a href="https://github.com/ReverbOD/strigo-template" target="_blank"><button><span
+                                        class="index"> Download <i class="gg-arrow-right"></i></span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <div class=" portfolio-image">
+                        <img src="./src/media/images/portfolio/vanilla.png" alt="portfolio-fourth">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Vanilla Template</h2>
+                        <p>A lightweight portfolio template, easy to setup & use. Made with SCSS & Vanilla JS, compiled
+                            with Webpack.</p>
+                        <div class="button">
+                            <a href="https://reverbod.github.io/vanilla-portfolio-template/#home"
+                                target="_blank"><button><span class="index"> View <i
+                                            class="gg-arrow-right"></i></span></button></a>
+                            <a href="https://github.com/ReverbOD/vanilla-portfolio-template"
+                                target="_blank"><button><span class="index"> Download <i
+                                            class="gg-arrow-right"></i></span></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-text">
+                    <img src="./src/media/images/icon/copyright-line.png" alt="copyright-img" class="images" height="14px">
+                    ReverbOD
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- * END Main -->
-    <script src="./dist/bundle.js"></script>
-  </body>
+    <script src="./src/js/jquery.min.js"></script>
+    <script src="./src/js/script.js"></script>
+    <script src="./src/js/index.js"></script>
+</body>
+
 </html>
