@@ -6,7 +6,14 @@ $(window).on('load', function () {
   gsap.to('#navigation-content', 0, { display: 'none' });
   gsap.to('#navigation-content', 0, { display: 'flex', delay: 1 });
 });
-
+$(function () {
+  $('.menubar').on('click', function () {
+    gsap.to('#navigation-content', 0.6, { y: 0 });
+  });
+  $('.navigation-close').on('click', function () {
+    gsap.to('#navigation-content', 0.6, { y: '-100%' });
+  });
+});
 $(function () {
   $('#about-link').on('click', function () {
     gsap.to('#navigation-content', 0, { display: 'none', delay: 0.7 });
