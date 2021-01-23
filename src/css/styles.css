@@ -816,6 +816,7 @@ body {
   padding-right: 2%;
   padding-top: 50px;
   padding-bottom: 40px;
+  font-weight: 400;
 }
 
 .portfolio-text {
@@ -829,12 +830,13 @@ body {
   background: #171717;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-weight: 400;
 }
 
 .portfolio-text h2 {
   font-size: 35px;
   font-family: Lato;
-  font-weight: 200;
+  font-weight: 400;
   padding: 20px;
   color: #035aa6;
   transition: all 0.4s ease;
@@ -843,14 +845,14 @@ body {
   font-size: 16px;
   opacity: 0.8;
   font-family: Lato;
-  font-weight: 200;
+  font-weight: 400;
   padding: 20px;
 }
 .portfolio-text button {
   font-size: 16px;
   opacity: 0.8;
   font-family: Lato;
-  font-weight: 200;
+  font-weight: 400;
   padding: 10px 20px;
   background: transparent;
   color: #035aa6;
@@ -1160,6 +1162,9 @@ button:hover .index {
     margin-top: 20px;
     margin-bottom: 15px;
   }
+  .skill-title {
+    font-weight: 400;
+  }
   .portfolio {
     height: auto;
     width: 100%;
@@ -1171,6 +1176,7 @@ button:hover .index {
     padding-right: 2%;
     padding-top: 50px;
     padding-bottom: 40px;
+    font-weight: 400;
   }
   .portfolio-text {
     width: 90%;
