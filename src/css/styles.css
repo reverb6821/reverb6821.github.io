@@ -696,7 +696,7 @@ body {
   align-items: center;
   justify-content: center;
   transition: all 0.4s ease;
-  width: 40%;
+  width: 45%;
   border-radius: 10px;
   background: #035aa6;
 }
@@ -723,7 +723,7 @@ body {
   align-items: center;
   justify-content: center;
   transition: all 0.4s ease;
-  width: 43%;
+  width: 38%;
   border-radius: 10px;
   background: #035aa6;
 }
@@ -736,7 +736,7 @@ body {
   align-items: center;
   justify-content: center;
   transition: all 0.4s ease;
-  width: 43%;
+  width: 46%;
   border-radius: 10px;
   background: #035aa6;
 }
@@ -748,7 +748,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 24%;
+  width: 21%;
   border-radius: 10px;
   transition: all 0.4s ease;
   background: #035aa6;
@@ -761,7 +761,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 35%;
+  width: 41%;
   border-radius: 10px;
   background: #035aa6;
   transition: all 0.4s ease;
