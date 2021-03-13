@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button';
+//import Button from 'react-bootstrap/Button';
 import Particle from '../Home/Particles';
 import ResumeInfo from './ResumeInfo';
 
@@ -25,7 +25,7 @@ function Resume() {
               date='Feb 2021 - Actually'
               content={[
                 'Develop and maintening various project builded with microservice on Spring-boot',
-                ' Mainly used Spring-boot on backend & ReactJS on Frontend',
+                'Mainly used Spring-boot on backend & ReactJS on Frontend',
               ]}
             />
             <ResumeInfo
@@ -34,9 +34,9 @@ function Resume() {
               content={[
                 'Internship on Web development based on .NET',
                 'The main topics and technologies addressed are:',
-                '- OOP,MVC, API & REST service',
-                '- C# as Backend',
-                '- HTML, CSS, Bootstrap, JS (plain & ES6)',
+                'OOP,MVC, API & REST service',
+                'C# as Backend',
+                'HTML, CSS, Bootstrap, JS (plain & ES6)',
               ]}
             />
             <ResumeInfo
@@ -52,11 +52,11 @@ function Resume() {
               title='Web Developer Freelance [Fiverr]'
               content={[
                 'Main services offered:',
-                '- Template creation with the main FE technologies (HTML, CSS, Bootstrap, JS & JQuery)',
-                '- Wordpress Website',
-                '- Wordpress theme customization',
-                '- Wordpress theme customization',
-                '- Wordpress Plugin installation and configuration',
+                'Template creation with the main FE technologies (HTML, CSS, Bootstrap, JS & JQuery)',
+                'Wordpress Website',
+                'Wordpress theme customization',
+                'Wordpress theme customization',
+                'Wordpress Plugin installation and configuration',
               ]}
             />
           </Col>
@@ -67,13 +67,13 @@ function Resume() {
               date='2020'
               content={[
                 '1800 hours of course, which cover:',
-                '- HTML, CSS, SASS, Bootstrap, JQuery',
-                '- Javascript (Algorithms, OOP and Functional programming)',
-                '- Basics of Web Design & Responsive Design',
-                '- React, Redux and Hooks',
-                '- The APIs and Microservices with npm, Node.JS & MongoDB',
-                '- Data visualization with AJAX & JSon',
-                '- Quality test assurance with Chai & advanced NodeJS and Express.',
+                'HTML, CSS, SASS, Bootstrap, JQuery',
+                'Javascript (Algorithms, OOP and Functional programming)',
+                'Basics of Web Design & Responsive Design',
+                'React, Redux and Hooks',
+                'The APIs and Microservices with npm, Node.JS & MongoDB',
+                'Data visualization with AJAX & JSon',
+                'Quality test assurance with Chai & advanced NodeJS and Express.',
               ]}
             />
             <ResumeInfo
@@ -81,10 +81,10 @@ function Resume() {
               date='Oct. 2019'
               content={[
                 'Corso comprensivo di 50 ore in cui si sono andati a toccare i principali argomenti e tecnologie in ambito web:',
-                '- HTML5, CSS3, Bootstrap 4, SemanticUI, JavaScript, jQuery, DOM Manipulation',
-                '- NodeJS, ExpressJS, NPM, PassportJS, Authorization, Rest',
-                '- MongoDB, Database Associations',
-                '- Unix Command Line',
+                'HTML5, CSS3, Bootstrap 4, SemanticUI, JavaScript, jQuery, DOM Manipulation',
+                'NodeJS, ExpressJS, NPM, PassportJS, Authorization, Rest',
+                'MongoDB, Database Associations',
+                'Unix Command Line',
               ]}
             />
             <ResumeInfo
@@ -92,12 +92,12 @@ function Resume() {
               date='Feb. 2020'
               content={[
                 'React course wich cover:',
-                '- React Basics, Managing state with class-based components and React Hooks',
-                '- How to output lists and conditional content',
-                '- Styling of React components',
-                '- How to access Http content from within React apps (AJAX)',
-                '- Redux, Redux, Redux ... from basics to advanced!',
-                '- Forms and form validation in React apps, Authentication',
+                'React Basics, Managing state with class-based components and React Hooks',
+                'How to output lists and conditional content',
+                'Styling of React components',
+                'How to access Http content from within React apps (AJAX)',
+                'Redux, Redux, Redux ... from basics to advanced!',
+                'Forms and form validation in React apps, Authentication',
               ]}
             />
           </Col>
