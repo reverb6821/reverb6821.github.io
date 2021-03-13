@@ -63,7 +63,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: var(--primary-color-light);
   border-radius: 12px;
 }
 
