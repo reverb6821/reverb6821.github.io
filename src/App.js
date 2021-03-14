@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import './App.css';
+import './App.scss';
 
 import Preloader from './Components/Preloader/Preloader';
 import Navbar from './Components/Navbar/Navbar';
@@ -10,7 +10,7 @@ import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import Resume from './Components/Resume/Resume';
-
+import Project from './Components/Project/Project';
 import Footer from './Components/Footer/Footer';
 
 function App() {
@@ -30,6 +30,7 @@ function App() {
           <Route path='/' exact component={Home} />
           <Route path='/about' component={About} />
           <Route path='/resume' component={Resume} />
+          <Route path='/project' component={Project} />
         </Switch>
         <Footer />
       </div>

@@ -1,27 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.f468fcd0.chunk.css",
-    "main.js": "/static/js/main.e4d58cb5.chunk.js",
-    "main.js.map": "/static/js/main.e4d58cb5.chunk.js.map",
+    "main.css": "/static/css/main.5560aa26.chunk.css",
+    "main.js": "/static/js/main.4f3a2592.chunk.js",
+    "main.js.map": "/static/js/main.4f3a2592.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3e98f239.js",
     "runtime-main.js.map": "/static/js/runtime-main.3e98f239.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.1c85d21b.chunk.js": "/static/js/2.1c85d21b.chunk.js",
-    "static/js/2.1c85d21b.chunk.js.map": "/static/js/2.1c85d21b.chunk.js.map",
+    "static/js/2.14f43f34.chunk.js": "/static/js/2.14f43f34.chunk.js",
+    "static/js/2.14f43f34.chunk.js.map": "/static/js/2.14f43f34.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.f468fcd0.chunk.css.map": "/static/css/main.f468fcd0.chunk.css.map",
-    "static/js/2.1c85d21b.chunk.js.LICENSE.txt": "/static/js/2.1c85d21b.chunk.js.LICENSE.txt",
+    "static/css/main.5560aa26.chunk.css.map": "/static/css/main.5560aa26.chunk.css.map",
+    "static/js/2.14f43f34.chunk.js.LICENSE.txt": "/static/js/2.14f43f34.chunk.js.LICENSE.txt",
+    "static/media/api.08a22c04.png": "/static/media/api.08a22c04.png",
+    "static/media/aquariumnext.7caf6923.jpg": "/static/media/aquariumnext.7caf6923.jpg",
     "static/media/home-main.50083f4d.svg": "/static/media/home-main.50083f4d.svg",
+    "static/media/ice.f2126cd8.jpg": "/static/media/ice.f2126cd8.jpg",
     "static/media/laptop.1c7281f4.jpg": "/static/media/laptop.1c7281f4.jpg",
     "static/media/logo.f4912d55.svg": "/static/media/logo.f4912d55.svg",
-    "static/media/App.css": "/static/media/preloader.dd0dd18e.svg"
+    "static/media/maurodr.415511a7.jpg": "/static/media/maurodr.415511a7.jpg",
+    "static/media/App.scss": "/static/media/preloader.dd0dd18e.svg",
+    "static/media/strigo.cf2bdf4b.jpg": "/static/media/strigo.cf2bdf4b.jpg",
+    "static/media/vanilla.dbb37976.png": "/static/media/vanilla.dbb37976.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3e98f239.js",
     "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.1c85d21b.chunk.js",
-    "static/css/main.f468fcd0.chunk.css",
-    "static/js/main.e4d58cb5.chunk.js"
+    "static/js/2.14f43f34.chunk.js",
+    "static/css/main.5560aa26.chunk.css",
+    "static/js/main.4f3a2592.chunk.js"
   ]
 }

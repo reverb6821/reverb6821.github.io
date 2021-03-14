@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import homeLogo from '../../Asset/img/home-main.svg';
 import Particles from './Particles';
 import Type from './Type';
-import '../../App.css';
+import '../../App.scss';
 function Home() {
   return (
     <section>
