@@ -2,7 +2,7 @@
 /* eslint-disable no-mixed-spaces-and-tabs */
 import React from 'react';
 import styled from 'styled-components';
-import { Javascript } from '@styled-icons/boxicons-logos';
+import { ReactLogo } from '@styled-icons/boxicons-logos';
 
 const Container = styled.div`
 	font-size: 16px;
@@ -18,12 +18,29 @@ const Text = styled.p`
 	text-align: center;
 `;
 
+export const ReactJsLogo = styled(ReactLogo)`
+
+const attrs = {
+    fill: 'red',
+  }
+  -webkit-animation: rotation 2s infinite linear
+  @-webkit-keyframes rotation {
+	from {
+			-webkit-transform: rotate(0deg);
+	}
+	to {
+			-webkit-transform: rotate(359deg);
+	}
+}
+  
+`;
+  
 const Footer = () => {
 	return (
 		<Container>
 			<Text>
-				'All my work are powered by a lot of
-				 <Javascript size="21" title="Javascript"/>
+				'made with 
+				 <ReactLogo size="21" title="React.js"/> 
 				'
 			</Text>
 		</Container>

@@ -7,6 +7,7 @@ import { LinkedinSquare } from '@styled-icons/boxicons-logos';
 import { FilePdf } from '@styled-icons/boxicons-solid';
 
 const SideContainer = styled.div`
+background: #1e1e1e;
 	width: 40px;
 	position: fixed;
 	z-index: 10;
@@ -17,11 +18,13 @@ const SideContainer = styled.div`
 	}
 `;
 const LeftSideContainer = styled(SideContainer)`
+background-color: #1e1e1e;
 	bottom: 0px;
 	left: 40px;
 	right: auto;
 `;
 const RightSideContainer = styled(SideContainer)`
+background-color: #1e1e1e;
 	bottom: 0px;
 	left: auto;
 	right: 40px;
@@ -69,7 +72,7 @@ const Sidebar = ({ handleToast }) => {
 	return (
 		<>
 			<LeftSideContainer>
-				<SideIcon whileHover={{ scale: 1.1, color: '#D82625' }} transition={{ duration: 0.5 }} whileTap={{ scale: 0.85 }}>
+				<SideIcon whileHover={{ scale: 1.1 }} transition={{ duration: 0.5 }} whileTap={{ scale: 0.85 }}>
 					<a
 						href='/'
 						target='_blank'
@@ -77,17 +80,17 @@ const Sidebar = ({ handleToast }) => {
 						<FilePdf />
 					</a>
 				</SideIcon>
-				<SideIcon whileHover={{ scale: 1.1, color: '#D82625' }} transition={{ duration: 0.5 }} whileTap={{ scale: 0.85 }}>
+				<SideIcon whileHover={{ scale: 1.1 }} transition={{ duration: 0.5 }} whileTap={{ scale: 0.85 }}>
 					<a href='https://github.com/reverb6821' target='_blank' rel='noopener noreferrer'>
 						<Github />
 					</a>
 				</SideIcon>
-				<SideIcon whileHover={{ scale: 1.1, color: '#D82625' }} transition={{ duration: 0.5 }} whileTap={{ scale: 0.85 }}>
+				<SideIcon whileHover={{ scale: 1.1 }} transition={{ duration: 0.5 }} whileTap={{ scale: 0.85 }}>
 					<a href='https://codepen.io/reverbod' target='_blank' rel='noopener noreferrer'>
 						<Codepen />
 					</a>
 				</SideIcon>
-				<SideIcon whileHover={{ scale: 1.1, color: '#D82625' }} transition={{ duration: 0.5 }} whileTap={{ scale: 0.85 }}>
+				<SideIcon whileHover={{ scale: 1.1 }} transition={{ duration: 0.5 }} whileTap={{ scale: 0.85 }}>
 					<a href='https://www.linkedin.com/in/gigliottigiuseppe/' target='_blank' rel='noopener noreferrer'>
 						<LinkedinSquare />
 					</a>

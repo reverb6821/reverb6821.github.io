@@ -35,7 +35,7 @@ const Title = styled(motion.div)`
 `;
 
 const TitleText = styled.h4`
-	font-family: 'Calibre', sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-size: 20px;
 	margin: 0;
 	padding: 0.2em 0;

@@ -83,7 +83,7 @@ const MobileContactInfo = ({ handleToast }) => {
 					animate={expandIcons ? 'show' : 'hidden1'}
 					whileTap={{ scale: 0.85 }}>
 					<a
-						href=''
+						href='/'
 						target='_blank'
 						rel='noopener noreferrer'>
 						<FilePdf />
