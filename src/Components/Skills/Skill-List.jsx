@@ -119,12 +119,12 @@ const Education = () => {
 				</TextContainer>
 				<TextContainer>
 					<ColumnText whileHover={{ scaleX: [1, 1.2, 0.85, 1], scaleY: [1, 0.8, 1.15, 1] }} color={'#D82625'}>
-						<Visualstudiocode size="52" title="Visual Studio Code" />
+						<Github size="52" title="Github" />			
 					</ColumnText>
 				</TextContainer>
 				<TextContainer>
 					<ColumnText whileHover={{ scaleX: [1, 1.2, 0.85, 1], scaleY: [1, 0.8, 1.15, 1] }}>
-						<Github size="52" title="Github" />
+						<Visualstudiocode size="52" title="Visual Studio Code" />
 					</ColumnText>
 				</TextContainer>
 			</SkillsColumn>
