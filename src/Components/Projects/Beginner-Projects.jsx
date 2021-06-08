@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { Github } from '@styled-icons/boxicons-logos';
 import { ExternalLinkOutline } from '@styled-icons/evaicons-outline';
 import ToDo from '../../assets/todo_app.jpg';
-import UMovie from '../../assets/Upcoming.png';
+import NetflixClone from '../../assets/netflix_clone.png';
 import SnakeGame from '../../assets/snake_game.png';
 import WeatherApp from '../../assets/weather_app.jpg';
 
@@ -243,15 +243,15 @@ const BeginnerProjects = () => {
 			<CardRow>
 				<Card>
 					<Link
-						githubLink='https://github.com/reverb6821/umovieinfo'
+						githubLink='https://github.com/reverb6821/netflix-clone-react'
 						externalLink='/'
 					/>
 					<ImgContainer>
-						<Img src={UMovie} alt='u-movie' />
+						<Img src={NetflixClone} alt='netflix-clone' />
 					</ImgContainer>
 					<TextContainer>
-						<Title>U Movie Info</Title>
-						<Explanation>Need a movie info? Find it on this app, builded with React.js and OMDB APIs</Explanation>
+						<Title>Netflix Clone with React</Title>
+						<Explanation>A simply clone of Netflix builded with React.js and implemented the video trailer with youtube</Explanation>
 						<Technology>
 							<TechItems>
 								<Hastag>#</Hastag>React.js
@@ -263,7 +263,7 @@ const BeginnerProjects = () => {
 								<Hastag>#</Hastag>SCSS
 							</TechItems>
 							<TechItems>
-								<Hastag>#</Hastag>Movie
+								<Hastag>#</Hastag>Netflix
 							</TechItems>
 						</Technology>
 					</TextContainer>

@@ -4,7 +4,7 @@ export const dataExperience = {
             main: 'Full Stack Web Developer',
         },
         1: {
-            main: 'Web Developer',
+            main: '.NET Web Developer',
         },
         2: {
             main: 'Web Developer',
@@ -18,15 +18,15 @@ export const dataExperience = {
             title: '@EasyCloud',
             date: 'Feb 2021 - Present',
             first: 'Webapp development and maintenance in the railway and container logistics sector.',
-            second: 'Frontend: Development interface for some Web App in React.js and some e-Commerce interface',
-            third: 'Help to develop RESTapi services with Spring-Boot in microservices',
+            second: 'Development Web App and E-Commerce With Symfony',
+            //third: 'Help to develop RESTapi services with Spring-Boot in microservices',
         },
         1: {
             title: '@ThinkOpen',
             date: 'Internship | Jul 2020 - Sept 2020',
             first: "Internship in .NET on e-Commerce sector. The topics and technologies addressed:",
             second: 'OOP, MVC, .NET, API, REST services, ',
-            third: 'Javascript, ES6, HTML, CSS, Bootstrap',
+            third: 'Javascript, ES6, HTML, CSS, Bootstrap, C#, LINQ',
         },
         2: {
             title: '@NebulosaWeb',
