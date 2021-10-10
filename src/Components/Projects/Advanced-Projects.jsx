@@ -263,20 +263,20 @@ const AdvancedProjects = ({ isMobile }) => {
 					<Card>
 						<Title>Andromeda - MVC Boilerplate</Title>
 						<Description>
-						Andromeda is my personal MVC boilerplate that I use in my regular workflow to create website and web application builded with Express.JS, Webpack as compiler and Dev Server and Handlebars.js as template engine to render views.
+						Andromeda is a template for build modern Web App/PWA on a top of Express.JS as server and React as front end
 						</Description>
 						<Technology>
 							<TechItems>
 								<Hastag>#</Hastag>Node.js
 							</TechItems>
 							<TechItems>
-								<Hastag>#</Hastag>Webpack
+								<Hastag>#</Hastag>TypeScript
 							</TechItems>
 							<TechItems>
-								<Hastag>#</Hastag>Handlebars
+								<Hastag>#</Hastag>React
 							</TechItems>
 							<TechItems>
-								<Hastag>#</Hastag>MVC
+								<Hastag>#</Hastag>REST APIs
 							</TechItems>
 						</Technology>
 						<ButtonContainer>

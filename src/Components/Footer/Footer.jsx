@@ -40,7 +40,7 @@ const Footer = () => {
 		<Container>
 			<Text>
 				'made with 
-				 <ReactLogo size="21" title="React.js"/> 
+				 <ReactLogo size="21" title="React.js" style={{color: '#61DAFB'}}/> 
 				'
 			</Text>
 		</Container>
