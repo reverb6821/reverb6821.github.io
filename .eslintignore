@@ -1,0 +1,7 @@
+*.css
+*.svg
+tsconfig
+.prettierrc.json
+node_modules
+build
+reportWebVitals.ts
