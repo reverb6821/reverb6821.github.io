@@ -26,25 +26,20 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to='about' smooth={true} duration={500}>
-              About
-            </Link>
-          </li>
-          <li>
             <Link to='skills' smooth={true} duration={500}>
               Skills
             </Link>
           </li>
           <li>
-            <Link to='work' smooth={true} duration={500}>
-              Work
+            <Link to='project' smooth={true} duration={500}>
+              project
             </Link>
           </li>
         </ul>
   
         {/* Hamburger */}
         <div onClick={handleClick} className='md:hidden z-10'>
-          {!nav ? <RiMenu4Line /> : <RiCloseFill />}
+          {!nav ? <RiMenu4Line size={30} /> : <RiCloseFill size={30} />}
         </div>
   
         {/* Mobile menu */}
@@ -52,18 +47,12 @@ const Navbar = () => {
           className={
             !nav
               ? 'hidden'
-              : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'
+              : 'absolute top-0 left-0 w-full h-screen bg-[#1e1e1e] flex flex-col justify-center items-center'
           }
         >
           <li className='py-6 text-4xl'>
             <Link onClick={handleClick} to='home' smooth={true} duration={500}>
               Home
-            </Link>
-          </li>
-          <li className='py-6 text-4xl'>
-            {' '}
-            <Link onClick={handleClick} to='about' smooth={true} duration={500}>
-              About
             </Link>
           </li>
           <li className='py-6 text-4xl'>
@@ -74,14 +63,8 @@ const Navbar = () => {
           </li>
           <li className='py-6 text-4xl'>
             {' '}
-            <Link onClick={handleClick} to='work' smooth={true} duration={500}>
-              Work
-            </Link>
-          </li>
-          <li className='py-6 text-4xl'>
-            {' '}
-            <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
-              Contact
+            <Link onClick={handleClick} to='project' smooth={true} duration={500}>
+              project
             </Link>
           </li>
         </ul>
