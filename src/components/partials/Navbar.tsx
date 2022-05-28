@@ -31,8 +31,8 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to='project' smooth={true} duration={500}>
-              project
+            <Link to='projects' smooth={true} duration={500}>
+              Projects
             </Link>
           </li>
         </ul>
@@ -63,8 +63,8 @@ const Navbar = () => {
           </li>
           <li className='py-6 text-4xl'>
             {' '}
-            <Link onClick={handleClick} to='project' smooth={true} duration={500}>
-              Project
+            <Link onClick={handleClick} to='projects' smooth={true} duration={500}>
+              Projects
             </Link>
           </li>
         </ul>
@@ -80,17 +80,17 @@ const Navbar = () => {
                 Linkedin <FaLinkedin size={30} />
               </a>
             </li>
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 rounded-lg  hover:bg-[#333333]'>
+            <li className='w-[160px] h-[60px] flex justify-between items-center text-[#fff] ml-[-100px] hover:ml-[-10px] duration-300 rounded-lg  hover:bg-[#333333]'>
               <a
-                className='flex justify-between items-center w-full text-[#333333] hover:text-[#fff]'
+                className='flex justify-between items-center w-full text-[#fff]'
                 href='https://github.com/reverb6821'
               >
                 Github <FaGithub size={30} />
               </a>
             </li>
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 rounded-lg  hover:bg-[#333333]'>
+            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] text-[#fff] hover:ml-[-10px] duration-300 rounded-lg  hover:bg-[#333333]'>
               <a
-                className='flex justify-between items-center w-full text-[#333333] hover:text-[#fff]'
+                className='flex justify-between items-center w-full text-[#fff]'
                 href='https://codepen.io/reverb6821'
               >
                 Codepen <FaCodepen size={30} />
