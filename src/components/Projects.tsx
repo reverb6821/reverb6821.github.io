@@ -11,8 +11,9 @@ const Projects = () => {
         </div>
 
         {/* Container */}
-        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
-          {/* Grid Item */}
+        <div className='grid xl:grid-cols-2 md:grid-cols-3 gap-4  '>
+
+          {/* Andromeda */}
           <div
             style={{backgroundImage: `url(${Andromeda})`, backgroundSize: 'cover'}}
             className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
@@ -36,6 +37,8 @@ const Projects = () => {
               </div>
             </div>
           </div>
+          {/*END Andromeda */}
+          
         </div>
 
 

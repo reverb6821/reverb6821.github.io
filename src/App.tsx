@@ -1,6 +1,3 @@
-
-import './App.css'
-
 import Navbar from './components/partials/Navbar'
 import Home from './components/Home'
 import Skills from './components/Skills'
@@ -9,7 +6,7 @@ function App() {
 
   return (
     <div className="App">
-       <Navbar />
+      <Navbar />
       <Home />
       <Skills/>
       <Projects/>

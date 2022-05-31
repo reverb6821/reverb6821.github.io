@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
     body {
         @apply font-[Raleway];
@@ -23,5 +24,5 @@
 
 .content-div:hover {
     background-color: #ff6a3b;
-    background-image: linear-gradient(147deg, #ff6a3b 0%, #FF2525 74%);
+    background-image: linear-gradient(147deg, #ff6a3b 0%, #FF2525 74%)!important;
 }
