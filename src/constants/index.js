@@ -1,8 +1,8 @@
-import {
-  carrent,
-  jobit,
-  tripguide
-} from '../assets'
+// import {
+//   carrent,
+//   jobit,
+//   tripguide
+// } from '../assets'
 
 export const navLinks = [
   {
@@ -12,10 +12,6 @@ export const navLinks = [
   {
     id: 'work',
     title: 'Work'
-  },
-  {
-    id: 'contact',
-    title: 'Contact'
   }
 ]
 
@@ -38,7 +34,7 @@ const projects = [
         color: 'pink-text-gradient'
       }
     ],
-    image: carrent,
+    image: '',
     source_code_link: 'https://github.com/'
   },
   {
@@ -59,7 +55,7 @@ const projects = [
         color: 'pink-text-gradient'
       }
     ],
-    image: jobit,
+    image: 'jobit',
     source_code_link: 'https://github.com/'
   },
   {
@@ -80,7 +76,7 @@ const projects = [
         color: 'pink-text-gradient'
       }
     ],
-    image: tripguide,
+    image: 'tripguide',
     source_code_link: 'https://github.com/'
   }
 ]
