@@ -2,7 +2,9 @@ import {
   andromeda,
   storelytic,
   meteo,
-  movie
+  movie,
+  snake,
+  webpack
 } from '../assets'
 
 export const navLinks = [
@@ -100,6 +102,48 @@ const projects = [
     ],
     image: movie,
     source_code_link: 'https://github.com/reverb6821/movie-app-react'
+  },
+  {
+    name: 'Snake',
+    description:
+        'Snake popular game builded with React and Sass',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient'
+      },
+      {
+        name: 'snake',
+        color: 'pink-text-gradient'
+      },
+      {
+        name: 'games',
+        color: 'orange-text-gradient'
+      }
+    ],
+    image: snake,
+    source_code_link: 'https://github.com/reverb6821/react-snake'
+  },
+  {
+    name: 'Snake',
+    description:
+        'This is my boilerplate that I use in my regular workflow for a webpack dev server',
+    tags: [
+      {
+        name: 'webpack',
+        color: 'blue-text-gradient'
+      },
+      {
+        name: 'sass',
+        color: 'pink-text-gradient'
+      },
+      {
+        name: 'pug',
+        color: 'orange-text-gradient'
+      }
+    ],
+    image: webpack,
+    source_code_link: 'https://github.com/reverb6821/webpack-server'
   }
 ]
 
