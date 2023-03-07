@@ -23,10 +23,10 @@ const About = () => {
         className='mt-4 text-slate-200 text-[17px] max-w-3xl leading-[30px]'
       >
         Im a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. Im a quick learner and collaborate closely with clients to
+        JavaScript, and expertise mainly in frontend frameworks like React, and
+        a little bit of backend like Express and Nest.js. Im a quick learner and collaborate closely with team to
         create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Lets work together to bring your ideas to life!
+        real-world problems.
       </motion.p>
 
       <motion.div variants={textVariant()} className='mt-5'>

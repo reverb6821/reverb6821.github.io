@@ -1,8 +1,9 @@
-// import {
-//   carrent,
-//   jobit,
-//   tripguide
-// } from '../assets'
+import {
+  andromeda,
+  storelytic,
+  meteo,
+  movie
+} from '../assets'
 
 export const navLinks = [
   {
@@ -19,7 +20,7 @@ const projects = [
   {
     name: 'StoreLytic',
     description:
-        'Storelytic is a PWA builded on a top of Express.JS as server and React as front end to manage inventory.',
+        'Storelytic is a PWA builded on a top of Express.JS as server and React as front end.',
     tags: [
       {
         name: 'react',
@@ -31,53 +32,74 @@ const projects = [
       },
       {
         name: 'tailwind',
-        color: 'pink-text-gradient'
+        color: 'green-text-gradient'
       }
     ],
-    image: '',
-    source_code_link: 'https://github.com/'
+    image: storelytic,
+    source_code_link: 'https://github.com/reverb6821/storelytic'
   },
   {
     name: 'Andromeda',
     description:
-        'React Admin Dasboard',
+        'React Admin Dasboard builded with MUI and Tailwind (work in progress...)',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient'
-      },
-      {
-        name: 'restapi',
-        color: 'green-text-gradient'
-      },
-      {
-        name: 'scss',
-        color: 'pink-text-gradient'
-      }
-    ],
-    image: 'jobit',
-    source_code_link: 'https://github.com/'
-  },
-  {
-    name: 'Weather-App',
-    description:
-        'Weatherapp builded with React Vite TS, Redux and Tailwind, using OW api',
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient'
-      },
-      {
-        name: 'redux',
-        color: 'green-text-gradient'
       },
       {
         name: 'tailwind',
+        color: 'green-text-gradient'
+      },
+      {
+        name: 'mui',
         color: 'pink-text-gradient'
       }
     ],
-    image: 'tripguide',
-    source_code_link: 'https://github.com/'
+    image: andromeda,
+    source_code_link: 'https://github.com/reverb6821/andromeda'
+  },
+  {
+    name: 'Weather App',
+    description:
+        'Wheather App builded with Redux, Tailwind and OW API',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient'
+      },
+      {
+        name: 'tailwind',
+        color: 'green-text-gradient'
+      },
+      {
+        name: 'redux',
+        color: 'pink-text-gradient'
+      }
+    ],
+    image: meteo,
+    source_code_link: 'https://github.com/reverb6821/weather-app'
+  },
+  {
+    name: 'Movie App',
+    description:
+        'Movie App builded with React, Tailwind and TMDB API',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient'
+      },
+      {
+        name: 'tailwind',
+        color: 'green-text-gradient'
+      },
+      {
+        name: 'tmdb',
+        color: 'orange-text-gradient'
+      }
+    ],
+    image: movie,
+    source_code_link: 'https://github.com/reverb6821/movie-app-react'
   }
 ]
 
