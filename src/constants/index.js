@@ -125,7 +125,7 @@ const projects = [
     source_code_link: 'https://github.com/reverb6821/react-snake'
   },
   {
-    name: 'Snake',
+    name: 'Webpack Boilerplate',
     description:
         'This is my boilerplate that I use in my regular workflow for a webpack dev server',
     tags: [
