@@ -33,9 +33,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ id, imgSrc, source_code_link,
                     <p className='mt-2 text-color-secondary text-[14px]'>{desc}</p>
                 </div>
                 <div className='mt-4 flex flex-wrap gap-2'>
-                    {tags.map((tag) => (
+                    {tags.map((tag, index) => (
                         <p
-                            key={`${name}-${tag.name}`}
+                            key={`${index}-${tag.name}`}
                             className={`text-[14px] ${tag.color}`}
                         >
                             #{tag.name}
