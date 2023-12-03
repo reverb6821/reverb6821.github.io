@@ -1,10 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+
+const data = typeof window !== "undefined" && localStorage.getItem("isThemeDark")  ? 
+  JSON.parse(localStorage.getItem("isThemeDark") || '{}') : false
+
 const initialState = {
-  isThemeDark:
-  localStorage.getItem("isThemeDark") != undefined
-    ? JSON.parse(localStorage.getItem("isThemeDark") || '{}')
-    : false,//light mode is the default
+  isThemeDark: data
 };
 
 export const themeSlice = createSlice({

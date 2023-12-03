@@ -18,9 +18,9 @@ const About: React.FC = () => {
                         <div className="col-span-1 md:col-span-2">
                             {/* description */}
                             <p className="text-xl text-slate-700 dark:text-slate-300 mb-4 pb-10">
-                                Over the last years, I've worked on numerous projects that required deep knowledge of React, Redux, and TypeScript.
+                                Over the last years, I&apos;ve worked on numerous projects that required deep knowledge of React, Redux, and TypeScript.
                                 I developed complex web applications using React with Typescript ans managed application state with Redux aboard of modern, responsive user interfaces  with mainly Tailwind CSS and plain sass.
-                                I'm passionate about clean, well-structured code, and I firmly believe in continuous learning and improvement.
+                                I&apos;m passionate about clean, well-structured code, and I firmly believe in continuous learning and improvement.
                                 I have a solid understanding of responsive design principles and web accessibility, and always strive to create intuitive and engaging user experiences.
                             </p>
                             <div className='flex flex-row flex-wrap justify-center gap-10'>
