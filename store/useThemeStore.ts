@@ -9,7 +9,7 @@ interface ThemeState {
   theme: string
 }
 
-const useThemeStore = create<ThemeState>(
+const useThemeStore = create<ThemeState>()(
   persist(
     (set) => ({
       theme: THEME_LIGHT,
