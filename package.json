@@ -1,36 +1,32 @@
 {
-  "name": "storelytic",
+  "name": "reverb6821.github.io",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "gh-pages -d build "
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
-    "@reduxjs/toolkit": "^1.9.7",
-    "framer-motion": "^10.16.5",
-    "i18next": "^23.7.6",
-    "next": "14.0.3",
-    "react": "^18",
-    "react-dom": "^18",
-    "react-i18next": "^13.5.0",
-    "react-icons": "^4.12.0",
-    "react-redux": "^8.1.3",
-    "remixicon": "^3.5.0"
+    "motion": "^12.0.6",
+    "next": "15.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.4.0",
+    "zustand": "^5.0.3"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3",
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10.0.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.3",
-    "gh-pages": "^6.1.0",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.6",
+    "gh-pages": "^6.3.0",
     "postcss": "^8",
-    "tailwindcss": "^3.3.0",
+    "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
 }
