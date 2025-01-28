@@ -49,7 +49,7 @@ Develop clean, efficient and maintainable code including using automated testing
     date: "Feb 2021 - May 2023",
     description: `Development, design and maintenance of web applications using React, Redux Toolkit and Tailwind CSS for management, AIS systems and e-commerce.
         Debugging and troubleshooting within code using web browser development tools;
-        Developing clean, efficient and maintainable code.`,
+        Developing clean, efficient and maintainable code including using automated testing with Jest and React testing library..`,
   }, {
     title: "Web Developer Internship",
     company: "ThinkOpen",
