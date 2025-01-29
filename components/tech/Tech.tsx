@@ -1,4 +1,5 @@
 import * as React from 'react'
+import * as motion from 'motion/react-client'
 
 interface TechProps {
     title: string
@@ -20,9 +21,14 @@ const Tech: React.FC<TechProps> = (props) => (
                 {props.techs && props.techs.map((tech, index) => (
                     <div
                         key={index}
-                        className="flex space-x-2 text-color-secondary items-center overflow-hidden"
+                        className="flex space-x-2 text-color-secondary items-center"
                     >
-                        {tech.icon}
+                        <motion.span
+                            whileHover={{ scaleX: [1, 1.2, 0.85, 1], scaleY: [1, 0.8, 1.15, 1] }}
+                        >
+                            {tech.icon}
+
+                        </motion.span>
                         <span className="lang font-medium">{tech.name}</span>
                     </div>
                 ))}

@@ -1,4 +1,5 @@
 import * as React from 'react'
+import * as motion from 'motion/react-client'
 
 interface ContactProps {
     heading: string
@@ -17,16 +18,19 @@ const Contact: React.FC<ContactProps> = (props) => (
             </h1>
             <div className="mt-2 ml-4">
                 {props.contact && props.contact.map((contact, index) => (
-                    <div key={index} className="flex flex-row justify-start items-center ">
-                        <a
+                    <div
+                        key={index}
+                        className="flex flex-row justify-start items-center"
+                    >
+                        <motion.a
                             href={contact.href}
                             target="_blank"
-                            className="flex flex-row items-center space-x-4 group"
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.8 }}
+                            className="flex flex-row items-center text-lg space-x-4 group text-color-secondary hover:text-color-primary hover:font-semibold"
                         >
-                            <div className="text-lg text-color-secondary font-mono relative overflow-hidden">
                                 {contact.name}
-                            </div>
-                        </a>
+                        </motion.a>
                     </div>
                 ))}
             </div>

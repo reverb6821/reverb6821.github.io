@@ -24,26 +24,72 @@ const HOME_DESC = '💻 Front End Developer | 🐛 JavaScript Enthusiast |🐧 L
 const PROJECTS = [
   {
     title: "reverb6821.github.io",
-    description: "This is my portfolio, builded with",
-    href: "https://github.com/reverb6821/reverb6821.github.io/tree/master",
-    techs: ["nextjs", "gh-pages", "tailwindcss"]
-  }
+    description: "This is my portfolio, builded with Next.js and Tailwind",
+    href: "https://github.com/reverb6821/reverb6821.github.io",
+    tags: [
+      {
+        name: 'nextjs',
+        color: 'gray-text-gradient'
+      },
+      {
+        name: 'zustand',
+        color: 'pink-text-gradient'
+      },
+      {
+        name: 'tailwind',
+        color: 'green-text-gradient'
+      }
+    ]
+  },
+  // {
+  //   title: "AdminDesk",
+  //   description: "Dashboard builded with React and Shadcn",
+  //   href: "https://github.com/reverb6821/admindesk",
+  //   tags: [
+  //     {
+  //       name: 'react',
+  //       color: 'blue-text-gradient'
+  //     },
+  //     {
+  //       name: 'shadcn-ui',
+  //       color: 'gray-text-gradient'
+  //     },
+  //     {
+  //       name: 'zustand',
+  //       color: 'pink-text-gradient'
+  //     },
+  //     {
+  //       name: 'tailwind',
+  //       color: 'green-text-gradient'
+  //     }
+  //   ]
+  // },
+  // {
+  //   title: "Mauro Di Rubbo Photographer",
+  //   description: "Website for photographer",
+  //   href: "https://maurodirubbophotographer.it/",
+  //   tags: [
+  //     {
+  //       name: 'wordpress',
+  //       color: 'pink-text-gradient'
+  //     },
+  //     {
+  //       name: 'tailwind',
+  //       color: 'green-text-gradient'
+  //     }
+  //   ]
+  // }
 ]
 
 const EXPERIENCES = [
   {
     title: "Front End Developer",
-    company: "Shadcn",
-    date: "2021 - Present",
+    company: "Dacomat",
+    date: "May 2023 - Present",
     description: `Developing new applications in React and Redux.
 Develop clean, efficient and maintainable code including using automated testing with Jest and React testing library.`
   },
-  {
-    title: "Front End Developer",
-    company: "Dacomat",
-    date: "May 2023 - Present",
-    description: "I'm working"
-  }, {
+  { 
     title: "Front End Developer",
     company: "EasyCloud - Internet Innovation",
     date: "Feb 2021 - May 2023",

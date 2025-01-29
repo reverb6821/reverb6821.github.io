@@ -8,17 +8,42 @@ const About: React.FC = () => (
             <div className="mt-4 mb-6">
                 <h2 className="text-4xl font-semibold">About</h2>
                 <p className="mt-2">
-                Im a skilled software developer with experience in TypeScript and JavaScript, and expertise mainly in frontend frameworks like React, and a little bit of backend with Express. Im a quick learner and collaborate closely with team to create efficient, scalable, and user-friendly solutions that solve real-world problems.
+                    I am Giuseppe Gigliotti, an enthusiastic developer with 4+ years of experience with a history dating back to the
+                    days of 56k modems and Windows 95. My passion for technology has driven me to constantly explore and learn,
+                    leading me to become the expert I am today.
                 </p>
                 <div className="pt-20 grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-y-20 gap-x-20">
                     <Contact heading="Social Links" contact={CONTACT_INFO} />
                     <div className="col-span-1 md:col-span-2">
-                    <p>
-                        Over the last years, I&apos;ve worked on numerous projects that required deep knowledge of React, Redux, and TypeScript.
-                        I developed complex web applications using React with Typescript ans managed application state with Redux aboard of modern, responsive user interfaces  with mainly Tailwind CSS and plain sass.
-                        I&apos;m passionate about clean, well-structured code, and I firmly believe in continuous learning and improvement.
-                        I have a solid understanding of responsive design principles and web accessibility, and always strive to create intuitive and engaging user experiences.
-                    </p> 
+                        <div className='flex flex-col my-2'>
+                            <p className='text-color-primary font-semibold'>🚀 My path:</p>
+                            <ul className='text-color-secondary'>
+                                <li className='py-2'>
+                                    🎓I took training courses and studied independently, gaining skills in software development.
+                                </li>
+                                <li className='py-2'>
+                                    💼 I worked as a frontend developer at several companies where I contributed to projects in React.js and Redux.
+                                </li>
+                                <li className='py-2'>
+                                    🌐 Expert in React.js using TypeScript and vanilla, TailwindCSS and Redux with a strong passion for web development and the JavaScript ecosystem.
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div className='flex flex-col my-2 pt-4'>
+                            <p className='text-color-primary font-semibold'>🔍 My interests:</p>
+                            <ul className='text-color-secondary'>
+                                <li className='py-2'>
+                                    🌟 Web and mobile development: I have created responsive and performant applications using React.js, TailwindCSS, SCSS, Redux Toolkit.
+                                </li>
+                                <li className='py-2'>
+                                    📚 Continuous learning: I am always looking for new challenges and opportunities for growth.
+                                </li>
+                                <li className='py-2'>
+                                    🌐 Expert in React.js using TypeScript and vanilla, TailwindCSS and Redux with a strong passion for web development and the JavaScript ecosystem.
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,4 +1,5 @@
 import * as React from 'react'
+import * as motion from 'motion/react-client'
 import { CiLinkedin } from 'react-icons/ci';
 import { VscGithubAlt } from 'react-icons/vsc';
 
@@ -19,25 +20,34 @@ const Footer: React.FC<FooterProps> = (props) => (
                     © {props.year} {props.title}
                 </p>
                 <p>
-                    <a href={props.href}>
+                    <motion.a
+                        href={props.href}
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.8 }}
+                        className='text-sm font-normal hover:font-semibold text-color-primary hover: text-color-secondary'
+                    >
                         {props.description}
-                    </a>
+                    </motion.a>
                 </p>
                 <div className="space-x-4 flex flex-row items-center">
-                    <a
+                    <motion.a
                         href={props.githubUrl}
                         target="_blank"
-                        className="text-sm font-normal hover:font-semibold"
+                        className="text-sm font-normal hover:font-semibold text-color-primary hover: text-color-secondary"
+                         whileHover={{ scale: 1.1 }}
+                         whileTap={{ scale: 0.8 }}
                     >
                         <VscGithubAlt size={20} />
-                    </a>
-                    <a
+                    </motion.a>
+                    <motion.a
                         href={props.linkedinUrl}
                         target="_blank"
-                        className="text-sm font-normal hover:font-semibold"
+                        className="text-sm font-normal hover:font-semibold text-color-primary hover:text-color-secondary"
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.8 }}
                     >
                         <CiLinkedin size={20} />
-                    </a>
+                    </motion.a>
                 </div>
             </div>
         </footer>
