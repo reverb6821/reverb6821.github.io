@@ -12,7 +12,7 @@ const NAV_ITEMS = [
 const FOOTER_ITEMS = {
   year: new Date().getFullYear(),
   title: 'Giuseppe Gigliotti ',
-  description: 'website made with ❤️ and JS',
+  description: 'website made with ❤️',
   href: '/',
   githubUrl: 'https://github.com/reverb6821',
   linkedinUrl: 'https://www.linkedin.com/in/giuseppe-gigliotti-6821/'
@@ -41,29 +41,44 @@ const PROJECTS = [
       }
     ]
   },
-  // {
-  //   title: "AdminDesk",
-  //   description: "Dashboard builded with React and Shadcn",
-  //   href: "https://github.com/reverb6821/admindesk",
-  //   tags: [
-  //     {
-  //       name: 'react',
-  //       color: 'blue-text-gradient'
-  //     },
-  //     {
-  //       name: 'shadcn-ui',
-  //       color: 'gray-text-gradient'
-  //     },
-  //     {
-  //       name: 'zustand',
-  //       color: 'pink-text-gradient'
-  //     },
-  //     {
-  //       name: 'tailwind',
-  //       color: 'green-text-gradient'
-  //     }
-  //   ]
-  // },
+  {
+    title: "weather-app",
+    description: "A meteo web app, it provides the current weather and forecast for the next 5 days",
+    href: "https://github.com/reverb6821/weather-app",
+    tags: [
+      {
+        name: 'nextjs',
+        color: 'gray-text-gradient'
+      },
+      {
+        name: 'zustand',
+        color: 'pink-text-gradient'
+      },
+      {
+        name: 'react-query',
+        color: 'orange-text-gradient'
+      }
+    ]
+  },
+  {
+    title: "AdminDesk",
+    description: "Admin panel template for manage users, products and orders",
+    href: "https://github.com/reverb6821/admindesk",
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient'
+      },
+      {
+        name: 'shadcn-ui',
+        color: 'gray-text-gradient'
+      },
+      {
+        name: 'tailwind',
+        color: 'green-text-gradient'
+      }
+    ]
+  },
   // {
   //   title: "Mauro Di Rubbo Photographer",
   //   description: "Website for photographer",
