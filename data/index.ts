@@ -41,6 +41,26 @@ const PROJECTS = [
       }
     ]
   },
+  
+  {
+    title: "aquariumnext",
+    description: "A web app to manage your aquarium and track the parameters of the water",
+    href: "https://github.com/reverb6821/aquariumnext",
+    tags: [
+      {
+        name: 'nextjs',
+        color: 'gray-text-gradient'
+      },
+      {
+        name: 'zustand',
+        color: 'pink-text-gradient'
+      },
+      {
+        name: 'docker',
+        color: 'blue-text-gradient'
+      }
+    ]
+  },
   {
     title: "weather-app",
     description: "A meteo web app, it provides the current weather and forecast for the next 5 days",
