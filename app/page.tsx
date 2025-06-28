@@ -4,10 +4,11 @@ import Tech from '@/components/tech';
 import Repository from '@/components/repository';
 import Timeline from '@/components/timeline';
 import { PROJECTS, HOME_TITLE, HOME_DESC, EXPERIENCES } from '@/data';
+import { FaVuejs } from "react-icons/fa";
 
 import { FaReact, FaCss3 } from 'react-icons/fa'
-import { RiNextjsLine, RiTailwindCssFill, RiHtml5Line } from 'react-icons/ri'
-import { SiShadcnui, SiRedux, SiJest, SiTestinglibrary } from 'react-icons/si'
+import { RiTailwindCssFill, RiHtml5Line } from 'react-icons/ri'
+import { SiShadcnui, SiRedux, SiVitest, SiTestinglibrary } from 'react-icons/si'
 import { TbBrandTypescript } from 'react-icons/tb'
 import { LiaDocker } from 'react-icons/lia'
 import { GrMysql } from 'react-icons/gr'
@@ -28,8 +29,8 @@ const TECHS = [
       icon: <TbBrandTypescript size={30} color='#1772ff' />
     },
     {
-      name: "NextJS",
-      icon: <RiNextjsLine size={30} className='color-slate-900 dark:color-slate-50' />
+      name: "Vue",
+      icon: <FaVuejs size={30} color='#27bb61' />
   
     },
     {
@@ -45,8 +46,8 @@ const TECHS = [
       icon: <SiTestinglibrary size={30} color='#e03446' />
     },
     {
-      name: "Jest",
-      icon: <SiJest size={30} color='#b20618'/>
+      name: "Vitest",
+      icon: <SiVitest size={30} color='#dfdc11'/>
     },
     {
       name: "Tailwind CSS",

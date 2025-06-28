@@ -16,31 +16,40 @@ const About: React.FC = () => (
                     <Contact heading="Social Links" contact={CONTACT_INFO} />
                     <div className="col-span-1 md:col-span-2">
                         <div className='flex flex-col my-2'>
-                            <p className='text-color-primary font-semibold'>🚀 My path:</p>
+                            <p className='text-color-primary font-semibold'>🚀 My Journey</p>
                             <ul className='text-color-secondary'>
                                 <li className='py-2'>
-                                    🎓I took training courses and studied independently, gaining skills in software development.
+                                    🎓 I’ve completed formal training programs and pursued self-directed learning to build a strong foundation in software development.
                                 </li>
                                 <li className='py-2'>
-                                    💼 I worked as a frontend developer at several companies where I contributed to projects in React.js and Redux.
+                                    💼 Professionally, I’ve worked as a software developer in various companies, contributing to projects using React.js, Redux Toolkit, and TypeScript.
                                 </li>
                                 <li className='py-2'>
-                                    🌐 Expert in React.js using TypeScript and vanilla, TailwindCSS and Redux with a strong passion for web development and the JavaScript ecosystem.
+                                    🌐 Over time, I’ve specialized in the JavaScript ecosystem, focusing on modern web development and scalable front-end architecture.
                                 </li>
                             </ul>
                         </div>
-                        
+
                         <div className='flex flex-col my-2 pt-4'>
-                            <p className='text-color-primary font-semibold'>🔍 My interests:</p>
+                            <p className='text-color-primary font-semibold'>💡 Core Technical Skills</p>
                             <ul className='text-color-secondary'>
                                 <li className='py-2'>
-                                    🌟 Web and mobile development: I have created responsive and performant applications using React.js, TailwindCSS, SCSS, Redux Toolkit.
+                                    Frontend Development: Hands-on experience with React, Next.js, Angular, and Vue.js, choosing the right stack based on project needs.
                                 </li>
                                 <li className='py-2'>
-                                    📚 Continuous learning: I am always looking for new challenges and opportunities for growth.
+                                    Styling & UI/UX: I create responsive, accessible interfaces using SCSS with BEM methodology, TailwindCSS, and component libraries like Chakra UI, and shadcn/ui.
                                 </li>
                                 <li className='py-2'>
-                                    🌐 Expert in React.js using TypeScript and vanilla, TailwindCSS and Redux with a strong passion for web development and the JavaScript ecosystem.
+                                    Testing: I write robust automated tests using Jest, Vitest, and React Testing Library to ensure code reliability, scalability, and maintainability.
+                                </li>
+                                <li className='py-2'>
+                                    Documentation: I document API endpoints using Swagger and UI components using Storybook, promoting clarity and consistency across teams.
+                                </li>
+                                <li className='py-2'>
+                                    Debugging & Optimization: I actively work on optimizing and refactoring code using browser devtools and integrated debugging tools.
+                                </li>
+                                <li className='py-2'>
+                                    Workflow & Collaboration: I thrive in Agile environments, using GitHub Issues to manage tasks and foster transparent, collaborative workflows.
                                 </li>
                             </ul>
                         </div>
