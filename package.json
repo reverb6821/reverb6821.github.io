@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test": "jest"
+    "test": "jest",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "motion": "^12.42.2",
@@ -29,6 +30,9 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.10",
+    "eslint-import-resolver-typescript": "^4.4.5",
+    "eslint-plugin-better-tailwindcss": "^4.6.1",
+    "eslint-plugin-import": "^2.32.0",
     "jest": "^30.4.2",
     "jest-environment-jsdom": "^30.4.1",
     "tailwindcss": "^4",
