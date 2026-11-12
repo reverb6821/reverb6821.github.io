@@ -1,1 +1,306 @@
-{}
+{
+  "portfolio": {
+    "nav": [
+      "stack",
+      "esperienza",
+      "progetti",
+      "formazione",
+      "contatti"
+    ],
+    "navLabels": {
+      "stack": "stack",
+      "esperienza": "esperienza",
+      "progetti": "progetti",
+      "formazione": "formazione",
+      "contatti": "contatti"
+    },
+    "skipLink": "Salta al contenuto principale",
+    "status": "SYSTEM STATUS: ONLINE // ID-6821",
+    "unitLine": "UNIT// JAVASCRIPT-DEV · STATUS: OPERATIONAL",
+    "typewriter": [
+      "JavaScript Engineer",
+      "AI-Driven Developer",
+      "Linux Enthusiast"
+    ],
+    "heroBio1": [
+      "JavaScript Engineer specializzato in ",
+      "React e Vue",
+      ", con un approccio solido alla qualità del codice — testing automatizzato, TypeScript e GitFlow come standard di lavoro."
+    ],
+    "heroBio2": [
+      "Competenze trasversali su NestJS, Fastify, Express e database relazionali. Integro regolarmente ",
+      "Claude Code",
+      " e GitHub Copilot nel workflow per aumentare qualità e velocità senza sacrificare il controllo sul codice."
+    ],
+    "heroBtn": "VEDI L'ESPERIENZA →",
+    "heroScroll": "SCROLL TO EXPLORE ↓",
+    "stackMod": "competenze // MOD-01",
+    "stackSys": "SYS.STACK",
+    "stackTitle": "Tools & Tecnologie",
+    "stackSub": "Le tecnologie con cui lavoro ogni giorno — dal browser fino al container.",
+    "stack": [
+      {
+        "id": "01",
+        "label": "Sistema",
+        "items": [
+          "Nobara Linux / GNOME",
+          "Windows / WSL",
+          "VSCodium"
+        ]
+      },
+      {
+        "id": "02",
+        "label": "Frontend",
+        "items": [
+          "React",
+          "Next.js",
+          "Vue 3",
+          "TypeScript",
+          "Tailwind CSS",
+          "shadcn/ui",
+          "Storybook"
+        ]
+      },
+      {
+        "id": "03",
+        "label": "State & Data",
+        "items": [
+          "TanStack Query",
+          "Redux / Redux Saga",
+          "Pinia & Pinia Colada",
+          "Zustand",
+          "axios"
+        ]
+      },
+      {
+        "id": "05",
+        "label": "Workflow & CI/CD",
+        "items": [
+          "Git",
+          "Gitflow",
+          "CI/CD"
+        ]
+      },
+      {
+        "id": "06",
+        "label": "Testing",
+        "items": [
+          "Playwright",
+          "Vitest",
+          "Jest",
+          "React Testing Library"
+        ]
+      },
+      {
+        "id": "07",
+        "label": "Backend & DevOps",
+        "items": [
+          "Node.js",
+          "NestJS",
+          "Express.js & Fastify",
+          "PostgreSQL",
+          "MariaDB",
+          "Docker & Compose",
+          "Swagger"
+        ]
+      },
+      {
+        "id": "08",
+        "label": "AI-assisted dev",
+        "items": [
+          "Claude Code",
+          "GitHub Copilot",
+          "Cursor",
+          "Ollama",
+          "MCP"
+        ]
+      }
+    ],
+    "expMod": "esperienza // MOD-02",
+    "expSys": "SYS.LOG",
+    "expTitle": "Dove ho lavorato",
+    "expSub": "In ogni team ho introdotto o migliorato qualcosa — una suite di test dove non esisteva, un design system condiviso, un layer di data fetching più robusto.",
+    "experience": [
+      {
+        "id": "LOG-04",
+        "period": "Set 2025 — Presente",
+        "location": "Roma, Remoto",
+        "role": "Frontend Developer",
+        "items": [
+          "Sviluppo di applicazioni moderne con Next.js (App Router) e Vue 3, architetture backend con NestJS e Fastify e containerizzazione tramite Docker.",
+          "Progettazione e implementazione del design system dei componenti con Tailwind CSS, shadcn/ui e TypeScript, definendo le convenzioni di composizione adottate dagli altri sviluppatori del team.",
+          "Architettura del layer di data fetching con TanStack Query (React) e Pinia Colada (Vue), introducendo caching granulare, invalidation reattiva e gestione centralizzata degli stati di loading ed error.",
+          "Gestione dello stato con Pinia (Vue) e architettura ibrida su Next.js: React Server Components per il fetching SSR e TanStack Query nei Client Components per cache condivisa, invalidation reattiva e aggiornamenti dinamici.",
+          "Ottimizzazione di componenti e libreria UI in ottica di accessibilità (WCAG) e mobile-first.",
+          "Sviluppo e gestione di piattaforme multitenant con isolamento logico dei dati, autenticazione per tenant e personalizzazione per cliente.",
+          "Implementazione del sistema di autenticazione SSO con NextAuth e integrazione diretta, coprendo l'intero flusso end-to-end.",
+          "Sviluppo di applicativi AI-driven in produzione, integrando LLM nei flussi di lavoro aziendali e dei clienti per automatizzare e potenziare processi complessi.",
+          "Progettazione e sviluppo da zero di server MCP (Model Context Protocol) custom, oggi in produzione, per estendere le capacità degli LLM e collegarli in modo sicuro a fonti dati e servizi esterni.",
+          "Sviluppo di applicazioni web tramite agenti AI e MCP, delegando agli agenti l'implementazione e mantenendo la supervisione su architettura e qualità del codice.",
+          "Adozione di un approccio agent-driven con Claude Code e GitHub Copilot per la navigazione di codebase complesse, il refactoring e la generazione di test automatizzati."
+        ]
+      },
+      {
+        "id": "LOG-03",
+        "period": "Mag 2023 — Ago 2025",
+        "location": "Napoli, Remoto",
+        "role": "Frontend Developer",
+        "items": [
+          "Sviluppo frontend su applicazioni React 18 di complessità enterprise, con gestione di flussi asincroni complessi tramite Redux Saga: orchestrazione di chiamate multiple, side effect e stati di errore, oltre a fetch standard su componenti autonomi.",
+          "Realizzazione di interfacce pixel-perfect e responsive con SCSS e metodologia BEM, garantendo coerenza visiva e manutenibilità degli stili su codebase di grandi dimensioni.",
+          "Sviluppo di sistemi UI con Material UI, personalizzati in base ai requisiti di design dei prodotti.",
+          "Scrittura da zero della suite di test automatici con Jest e React Testing Library, con copertura di componenti, logica di business e flussi utente critici."
+        ]
+      },
+      {
+        "id": "LOG-02",
+        "period": "Feb 2021 — Mag 2023",
+        "location": "Pontelandolfo (BN), Ibrido",
+        "role": "Fullstack Developer",
+        "items": [
+          "Sviluppo fullstack su applicazioni di tracking navale e terrestre con integrazione dati AIS in tempo reale su mappe interattive con geozone e marker dinamici.",
+          "Introdotto Redux Toolkit e Tailwind CSS su progetti esistenti, definendo in autonomia architettura e convenzioni frontend.",
+          "Riscritti servizi API da Java/PHP a Node.js ed Express, migliorando manutenibilità e performance.",
+          "Deploy su server Linux via Docker; gestione di applicativi Java legacy con Tomcat e Apache.",
+          "Sviluppo end-to-end del sistema di autenticazione con credenziali e SSO, dal frontend alla gestione sicura di sessioni e token lato backend.",
+          "Sviluppo di un sistema di monitoraggio marittimo per i team operativi, con mappa interattiva, tracciamento GPS delle navi, integrazione del layer meteo Windy e alert automatici in caso di condizioni critiche.",
+          "Sviluppo di un applicativo di magazzino con tracciamento tramite QR code, mappatura delle ubicazioni e controllo dell'inventario."
+        ]
+      },
+      {
+        "id": "LOG-01",
+        "period": "Lug 2020 — Set 2020",
+        "location": "Milano, Remoto",
+        "role": "Web Developer Stage",
+        "items": [
+          "Formazione pratica sullo sviluppo web con stack .NET/C# e VueJS, con approfondimento dei principi OOP e del pattern MVC.",
+          "Affiancamento nella creazione di API REST, nella realizzazione di interfacce responsive con Bootstrap e nella gestione dei dati con LINQ."
+        ]
+      }
+    ],
+    "projMod": "progetti // MOD-03",
+    "projSys": "SYS.REPO",
+    "projTitle": "Cosa ho costruito",
+    "projSub": "Repository pubbliche, mirrorate su GitHub e Codeberg — dall'app di produzione all'utility per developer.",
+    "projects": [
+      {
+        "id": "SYS-01",
+        "desc": "Estensione VS Code leggera che inserisce automaticamente tag HTML di chiusura e blocchi CSS/SCSS/LESS."
+      },
+      {
+        "id": "SYS-02",
+        "desc": "Raccolta di snippet utili per JavaScript, TypeScript, React e Zustand."
+      },
+      {
+        "id": "SYS-03",
+        "desc": "Raccolta di Web Components realizzati con Lit e CSS, organizzata in un monorepo gestito con Turborepo."
+      },
+      {
+        "id": "SYS-04",
+        "desc": "Questo sito — Next.js, Tailwind CSS, Three.js per la scena 3D nell'hero, pubblicato su GitHub Pages."
+      },
+      {
+        "id": "SYS-05",
+        "desc": "App per monitorare il PC: utilizzo di CPU e rete, temperature e gestione di servizi e demoni attivi e dei container Docker."
+      }
+    ],
+    "eduMod": "formazione // MOD-04",
+    "eduSys": "SYS.EDU",
+    "eduTitle": "Studio continuo",
+    "eduSub": "Formazione formale e percorsi di approfondimento costante sulle tecnologie del mestiere.",
+    "eduCard1Title": "Formazione e Lingue",
+    "education": [
+      {
+        "year": "05/2026",
+        "desc": "Claude 101 · Claude Code 101 · Claude Code in Action · Agent Skills · Subagents · MCP (Intro & Advanced) · AI Fluency"
+      },
+      {
+        "year": "12/2023",
+        "desc": "Stephen Grider, Udemy — test automatici, Jest matchers e mock"
+      },
+      {
+        "year": "05/2023",
+        "desc": "Jonas Schmedtmann, Udemy — animazioni, Flexbox, Sass, BEM"
+      },
+      {
+        "year": "2020",
+        "desc": "HTML/CSS/SASS, JS OOP e funzionale, React, Redux, Node.js, MongoDB, microservizi REST"
+      },
+      {
+        "year": "02/2020",
+        "desc": "Academind / Maximilian Schwarzmüller, Udemy — Hooks, React Router, Redux, fetch e Axios"
+      }
+    ],
+    "contactMod": "// MOD-05 · OPEN CHANNEL",
+    "location": "TELESE TERME (BN) · REMOTE READY",
+    "copyright": "© 2026 GIUSEPPE GIGLIOTTI // END OF TRANSMISSION",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "codeberg": "Codeberg",
+    "recentCourses": "Corsi recenti",
+    "bootAria": "Avvio del sistema",
+    "bootProgress": "INIZIALIZZAZIONE",
+    "bootSkip": "SALTA ›",
+    "bootLines": [
+      {
+        "text": "boot portfolio_os v1.0",
+        "status": ""
+      },
+      {
+        "text": "carico stack",
+        "status": "OK"
+      },
+      {
+        "text": "avvio test suite",
+        "status": "OK"
+      },
+      {
+        "text": "calibrazione qualità",
+        "status": "100%"
+      }
+    ],
+    "introAria": "Introduzione",
+    "introEyebrow": "ACCESSO RISERVATO // ID-6821",
+    "introHint": "SCORRI PER AVVIARE",
+    "introLabel": "NAV",
+    "introLocked": "IN AVVIO",
+    "introOpen": "ROTTA IMPOSTATA",
+    "introLines": [
+      {
+        "text": "boot nav_os v2.7",
+        "status": ""
+      },
+      {
+        "text": "sync mappe stellari",
+        "status": "OK"
+      },
+      {
+        "text": "calibro giroscopi",
+        "status": "OK"
+      },
+      {
+        "text": "aggancio rotta",
+        "status": "OK"
+      },
+      {
+        "text": "ingresso in orbita",
+        "status": "100%"
+      }
+    ]
+  },
+  "language": {
+    "label": "Lingua",
+    "englishUk": "English",
+    "italian": "Italiano",
+    "description": ""
+  },
+  "notFound": {
+    "eyebrow": "ERR // MOD-404",
+    "code": "404",
+    "title": "Modulo non trovato",
+    "message": "La rotta richiesta non esiste in questo sistema, oppure è stata spostata. Verifica l'URL o torna alla base.",
+    "errorLine": "ERR_CODE: 0x0194 · SIGNAL LOST",
+    "cta": "TORNA ALLA HOME →",
+    "backLabel": "← indietro"
+  }
+}

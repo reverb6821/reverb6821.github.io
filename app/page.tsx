@@ -1,104 +1,178 @@
-import Image from "next/image";
+"use client";
+
+import { useTranslations } from "next-intl";
+import type { IntroLine, Translation } from "@/types/portfolio";
+
+import { usePortfolio } from "@/hooks/use-portfolio";
+import { useBoot } from "@/hooks/use-boot";
+
+import SpaceCanvas from "@/components/space-canvas";
+import NavBar from "@/components/navbar";
+import HeroSection from "@/components/hero-section";
+import StackSection from "@/components/stack-section";
+import ExperienceSection from "@/components/experience-section";
+import ProjectsSection from "@/components/projects-section";
+import EducationSection from "@/components/education-section";
+import ContactFooter from "@/components/contact-footer";
+import BootIntro from "@/components/boot-intro";
+import ScrollIntro from "@/components/scroll-intro";
 
 export default function Home() {
+  const intl = useTranslations("portfolio");
+
+  // Build the Translation object that child components expect.
+  // This keeps the section components decoupled from next-intl internals.
+  const t: Translation = {
+    nav: intl.raw("nav") as string[],
+    navLabels: intl.raw("navLabels") as Record<string, string>,
+    skipLink: intl("skipLink"),
+    status: intl("status"),
+    unitLine: intl("unitLine"),
+    typewriter: intl.raw("typewriter") as string[],
+    heroBio1: intl.raw("heroBio1") as [string, string, string],
+    heroBio2: intl.raw("heroBio2") as [string, string, string],
+    heroBtn: intl("heroBtn"),
+    heroScroll: intl("heroScroll"),
+    stackMod: intl("stackMod"),
+    stackSys: intl("stackSys"),
+    stackTitle: intl("stackTitle"),
+    stackSub: intl("stackSub"),
+    expMod: intl("expMod"),
+    expSys: intl("expSys"),
+    expTitle: intl("expTitle"),
+    expSub: intl("expSub"),
+    projMod: intl("projMod"),
+    projSys: intl("projSys"),
+    projTitle: intl("projTitle"),
+    projSub: intl("projSub"),
+    eduMod: intl("eduMod"),
+    eduSys: intl("eduSys"),
+    eduTitle: intl("eduTitle"),
+    eduSub: intl("eduSub"),
+    eduCard1Title: intl("eduCard1Title"),
+    contactMod: intl("contactMod"),
+    location: intl("location"),
+    copyright: intl("copyright"),
+    linkedin: intl("linkedin"),
+    github: intl("github"),
+    codeberg: intl("codeberg"),
+    recentCourses: intl("recentCourses"),
+    bootAria: intl("bootAria"),
+    bootProgress: intl("bootProgress"),
+    bootSkip: intl("bootSkip"),
+    bootLines: intl.raw("bootLines") as IntroLine[],
+    introAria: intl("introAria"),
+    introEyebrow: intl("introEyebrow"),
+    introHint: intl("introHint"),
+    introLabel: intl("introLabel"),
+    introLocked: intl("introLocked"),
+    introOpen: intl("introOpen"),
+    introLines: intl.raw("introLines") as IntroLine[],
+  };
+
+  const {
+    scrolled,
+    cursor, cursorHover, reduceCursorFx,
+    activeSection,
+    mobileOpen, setMobileOpen, drawerRef, drawerH,
+    scrollTo,
+  } = usePortfolio();
+  const { booting, finishBoot } = useBoot();
+
   return (
-    <div className="
-      flex flex-1 flex-col items-center justify-center bg-zinc-50 font-sans
-      dark:bg-black
-    ">
-      <main className="
-        flex w-full max-w-3xl flex-1 flex-col items-center justify-between
-        bg-white px-16 py-32
-        sm:items-start
-        dark:bg-black
-      ">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="
-          flex flex-col items-center gap-6 text-center
-          sm:items-start sm:text-left
-        ">
-          <h1 className="
-            max-w-xs text-3xl/10 font-semibold tracking-tight text-black
-            dark:text-zinc-50
-          ">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="
-            max-w-md text-lg/8 text-zinc-600
-            dark:text-zinc-400
-          ">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="
-                font-medium text-zinc-950
-                dark:text-zinc-50
-              "
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="
-                font-medium text-zinc-950
-                dark:text-zinc-50
-              "
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="
-          flex flex-col gap-4 text-base font-medium
-          sm:flex-row
-        ">
-          <a
-            className="
-              flex h-12 w-full items-center justify-center gap-2 rounded-full
-              bg-foreground px-5 text-background transition-colors
-              hover:bg-[#383838]
-              md:w-[158px]
-              dark:hover:bg-[#ccc]
-            "
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div
+      className="min-h-screen overflow-x-clip custom-cursor-root"
+      style={{
+        background: "#020810",
+        color: "#C8E8FF",
+        fontFamily: "'Share Tech Mono',monospace",
+        cursor: "none",
+      }}
+    >
+      {/* ── Accessibility skip link ── */}
+      <a href="#home" className="skip-link">{t.skipLink}</a>
+
+      {/* ── Boot intro (una volta per sessione, saltabile) ── */}
+      {booting && <BootIntro t={t} onDone={finishBoot} />}
+
+      {/* ── Custom cursor (desktop / non-touch only) ── */}
+      {!reduceCursorFx && (
+        <>
+          <div
+            className="fixed pointer-events-none"
+            style={{
+              left: 0, top: 0, width: 24, height: 24, zIndex: 9999,
+              transform: `translate3d(${cursor.x - 12}px,${cursor.y - 12}px,0)`,
+              willChange: "transform",
+            }}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+            <div
+              className="rounded-full transition-transform duration-100"
+              style={{
+                width: 24, height: 24,
+                border: "1px solid #00FFD1",
+                transform: cursorHover ? "scale(1.9)" : "scale(1)",
+                boxShadow: "0 0 8px #00FFD155",
+              }}
             />
-            Deploy Now
-          </a>
-          <a
-            className="
-              flex h-12 w-full items-center justify-center rounded-full border
-              border-solid border-black/8 px-5 transition-colors
-              hover:border-transparent hover:bg-black/4
-              md:w-[158px]
-              dark:border-white/[.145]
-              dark:hover:bg-[#1a1a1a]
-            "
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+          </div>
+          <div
+            className="fixed rounded-full pointer-events-none"
+            style={{
+              left: 0, top: 0, width: 4, height: 4,
+              background: "#00FFD1", zIndex: 9999,
+              transform: `translate3d(${cursor.x - 2}px,${cursor.y - 2}px,0)`,
+              willChange: "transform",
+            }}
+          />
+        </>
+      )}
+
+      {/* ── Animated space background ── */}
+      <SpaceCanvas />
+
+      {/* ── HUD grid overlay ── */}
+      <div
+        className="fixed inset-0 pointer-events-none"
+        style={{
+          zIndex: 0,
+          backgroundImage:
+            "linear-gradient(rgba(0,102,255,0.03) 1px,transparent 1px)," +
+            "linear-gradient(90deg,rgba(0,102,255,0.03) 1px,transparent 1px)",
+          backgroundSize: "48px 48px",
+        }}
+      />
+
+      {/* ── Corner HUD brackets ── */}
+      {(
+        [
+          { top: 12, left: 12, borderLeft: "1px solid #00FFD133", borderTop: "1px solid #00FFD133" },
+          { top: 12, right: 12, borderRight: "1px solid #00FFD133", borderTop: "1px solid #00FFD133" },
+          { bottom: 12, left: 12, borderLeft: "1px solid #00FFD133", borderBottom: "1px solid #00FFD133" },
+          { bottom: 12, right: 12, borderRight: "1px solid #00FFD133", borderBottom: "1px solid #00FFD133" },
+        ] as React.CSSProperties[]
+      ).map((s, i) => (
+        <div key={i} className="fixed pointer-events-none" style={{ ...s, width: 20, height: 20, zIndex: 4 }} />
+      ))}
+
+      {/* ── Navigation ── */}
+      <NavBar
+        t={t}
+        scrolled={scrolled}
+        mobileOpen={mobileOpen}
+        setMobileOpen={setMobileOpen}
+        drawerRef={drawerRef}
+        drawerH={drawerH}
+        activeSection={activeSection}
+        scrollTo={scrollTo}
+      />
+
+      {/* ── Page sections ── */}
+      <ScrollIntro t={t} />
+      <HeroSection t={t} scrollTo={scrollTo} />
+      <StackSection t={t} />
+      <ProjectsSection t={t} />
+      <ContactFooter t={t} />
     </div>
   );
 }

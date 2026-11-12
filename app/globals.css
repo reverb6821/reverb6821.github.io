@@ -1,26 +1,90 @@
 @import "tailwindcss";
 
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --ease-out-quint: cubic-bezier(.23, 1, .32, 1);
+  --ease-in-out-cubic: cubic-bezier(.645, .045, .355, 1);
+  --ease-out-cubic: cubic-bezier(.33, 1, .68, 1);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+::selection {
+  background: #00FFD1;
+  color: #020810;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: #020810; }
+::-webkit-scrollbar-thumb { background: #00FFD133; }
+
+/* ── Animations ── */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.4; transform: scale(0.8); }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 10px #00FFD122; }
+  50%       { box-shadow: 0 0 24px #00FFD166; }
+}
+
+/* ── Accessibility ── */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  background: #00FFD1;
+  color: #020810;
+  padding: 10px 18px;
+  font-family: var(--font-share-tech-mono), monospace;
+  font-size: 12px;
+  letter-spacing: 2px;
+  z-index: 10000;
+}
+.skip-link:focus { left: 12px; top: 12px; }
+
+a[data-hover]:focus-visible,
+button[data-hover]:focus-visible,
+button:focus-visible {
+  outline: 1px solid #00FFD1;
+  outline-offset: 3px;
+}
+
+/* ── Layout helpers ── */
+.hero-viewport {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .nav-desktop  { display: none !important; }
+  .nav-hamburger { display: flex !important; }
+}
+
+@media (pointer: coarse) {
+  .custom-cursor-root,
+  .custom-cursor-root * { cursor: auto !important; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
 }
