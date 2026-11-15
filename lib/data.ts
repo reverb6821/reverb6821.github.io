@@ -68,4 +68,11 @@ export const PROJECTS_META: ProjectMeta[] = [
     repo:   "https://github.com/reverb6821/nebula",
     mirror: undefined,
   },
+    {
+    id: "SYS-05", emoji: "🪸", title: "Aquarium desktop widget",
+    tags: ["Aquarium", "ESP-32", "C", "Arduino", "Desktop"],
+    accent: "#0066FF", status: "STABLE",
+    repo:   "https://github.com/reverb6821/digital-aquarium-desktop-widget",
+    mirror: undefined,
+  },
 ];
