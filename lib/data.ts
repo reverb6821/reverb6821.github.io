@@ -69,10 +69,10 @@ export const PROJECTS_META: ProjectMeta[] = [
     mirror: undefined,
   },
     {
-    id: "SYS-05", emoji: "🪸", title: "Aquarium desktop widget",
+    id: "SYS-06", emoji: "🪸", title: "Aquarium desktop widget",
     tags: ["Aquarium", "ESP-32", "C", "Arduino", "Desktop"],
-    accent: "#0066FF", status: "STABLE",
-    repo:   "https://github.com/reverb6821/digital-aquarium-desktop-widget",
-    mirror: undefined,
+    accent: "#ff007b", status: "OPERATIONAL",
+    repo: "https://codeberg.org/reverb6821/digital-aquarium-desktop-widget",
+    mirror: undefined
   },
 ];

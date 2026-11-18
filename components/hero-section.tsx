@@ -59,30 +59,6 @@ const HeroSection: FC<HeroSectionProps> = ({ t, scrollTo }) => (
       {t.heroBio2[0]}<span style={{ color: "#C8E8FF" }}>{t.heroBio2[1]}</span>{t.heroBio2[2]}
     </p>
 
-    <div className="flex flex-wrap" style={{ gap: 14 }}>
-      <button
-        data-hover
-        onClick={() => scrollTo("esperienza")}
-        style={{ ...orbitron, ...btnReset, color: "#00FFD1", border: "1px solid #00FFD1", padding: "13px 28px", fontWeight: 700, fontSize: 10, letterSpacing: 3, animation: "glow 3s ease-in-out infinite" }}
-        onMouseEnter={(e) => { e.currentTarget.style.background = "#00FFD1"; e.currentTarget.style.color = "#020810"; }}
-        onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "#00FFD1"; }}
-      >
-        {t.heroBtn}
-      </button>
-      <a
-        href={SOCIALS.linkedin}
-        target="_blank"
-        rel="noopener noreferrer"
-        data-hover
-        className="flex items-center no-underline"
-        style={{ ...orbitron, color: "#4A7A9B", border: "1px solid #0D2A44", padding: "13px 24px", fontSize: 10, letterSpacing: 3, cursor: "none", transition: "all 0.2s" }}
-        onMouseEnter={(e) => { e.currentTarget.style.borderColor = "#4A7A9B"; e.currentTarget.style.color = "#C8E8FF"; }}
-        onMouseLeave={(e) => { e.currentTarget.style.borderColor = "#0D2A44"; e.currentTarget.style.color = "#4A7A9B"; }}
-      >
-        LINKEDIN
-      </a>
-    </div>
-
     <div className="absolute flex justify-between" style={{ bottom: 32, left: "clamp(16px,4vw,48px)", right: "clamp(16px,4vw,48px)" }}>
       <span style={{ ...mono, fontSize: 9, color: "#4A7A9B55", letterSpacing: 3 }}>{t.heroScroll}</span>
       <span style={{ ...mono, fontSize: 9, color: "#4A7A9B55", letterSpacing: 2 }}>REACT · VUE · TYPESCRIPT · NODE.JS</span>

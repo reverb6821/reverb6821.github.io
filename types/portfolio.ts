@@ -11,25 +11,15 @@ export interface Translation {
   typewriter: string[];
   heroBio1: [string, string, string];
   heroBio2: [string, string, string];
-  heroBtn: string;
   heroScroll: string;
   stackMod: string;
   stackSys: string;
   stackTitle: string;
   stackSub: string;
-  expMod: string;
-  expSys: string;
-  expTitle: string;
-  expSub: string;
   projMod: string;
   projSys: string;
   projTitle: string;
   projSub: string;
-  eduMod: string;
-  eduSys: string;
-  eduTitle: string;
-  eduSub: string;
-  eduCard1Title: string;
   contactMod: string;
   location: string;
   copyright: string;
@@ -65,8 +55,8 @@ export interface Project {
   tags: string[];
   accent: string;
   status: ProjectStatus;
-  repo: string;
-  mirror: string;
+  repo: string | any;
+  mirror: string | any;
 }
 
 export interface EducationEntry {

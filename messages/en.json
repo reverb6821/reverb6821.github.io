@@ -14,12 +14,12 @@
     "status": "SYSTEM STATUS: ONLINE // ID-6821",
     "unitLine": "UNIT// JAVASCRIPT-DEV · STATUS: OPERATIONAL",
     "typewriter": [
-      "JavaScript Engineer",
+      "JavaScript Developer",
       "AI-Driven Developer",
       "Linux Enthusiast"
     ],
     "heroBio1": [
-      "JavaScript Engineer specialising in ",
+      "JavaScript Developer specialising in ",
       "React & Vue",
       ", with a strong focus on code quality — automated testing, TypeScript and GitFlow as standard."
     ],
@@ -28,7 +28,6 @@
       "Claude Code",
       " and GitHub Copilot into my workflow to boost quality and velocity without giving up code ownership."
     ],
-    "heroBtn": "VIEW EXPERIENCE →",
     "heroScroll": "SCROLL TO EXPLORE ↓",
     "stackMod": "skills // MOD-01",
     "stackSys": "SYS.STACK",
@@ -112,7 +111,7 @@
         ]
       }
     ],
-    "projMod": "projects // MOD-03",
+    "projMod": "projects // MOD-02",
     "projSys": "SYS.REPO",
     "projTitle": "What I've built",
     "projSub": "Public repositories, mirrored on GitHub and Codeberg — from production apps to developer utilities.",
@@ -136,9 +135,13 @@
       {
         "id": "SYS-05",
         "desc": "An app for monitoring a PC, including CPU and network usage, temperatures, and management of active services, daemons and Docker containers."
+      },
+      {
+        "id": "SYS-06",
+        "desc": "An animated pixel-art freshwater aquarium designed for the Waveshare ESP32-S3-Touch-LCD-4.3, transforming it into a charming digital aquarium widget for your desktop."
       }
     ],
-    "contactMod": "// MOD-05 · OPEN CHANNEL",
+    "contactMod": "// MOD-03 · OPEN CHANNEL",
     "location": "TELESE TERME (BN) · REMOTE READY",
     "copyright": "© 2026 GIUSEPPE GIGLIOTTI // END OF TRANSMISSION",
     "linkedin": "LinkedIn",
